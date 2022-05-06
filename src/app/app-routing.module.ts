@@ -12,7 +12,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     component: DashboardPageComponent
   },
-  ,
+   ,
   { path: '/finance', redirectTo: '/dashboard', pathMatch: 'full' },,
   {
     path: 'typography',
