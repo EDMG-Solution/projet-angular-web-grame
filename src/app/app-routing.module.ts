@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { DashboardPageComponent } from './pages/dashboard/containers';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import {AuthGuard} from './pages/auth/guards';
-import { FinancesComponent } from './pages/finances/finances.component';
 
 const routes: Routes = [
   {
@@ -12,8 +11,6 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     component: DashboardPageComponent
   },
-   ,
-  { path: '/finance', redirectTo: '/dashboard', pathMatch: 'full' },,
   {
     path: 'typography',
     pathMatch: 'full',
