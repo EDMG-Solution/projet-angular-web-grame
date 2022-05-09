@@ -1,6 +1,16 @@
 export enum routes {
   DASHBOARD = '/dashboard',
   FINANCES ='/finances',
+  AVANCEMENT ='/avancement-detaille',
+  GESTION_CHATING ='/gestion-chating',
+  GESTION_ALERTES ='/gestiondesalertes',
+  ISSUE_LOG ='/issue-log',
+  MEDIATHEQUE ='/mediatheque',
+  MESSAGERIES ='/messageries',
+  PARAMETRAGES ='/parametrage',
+  REFERENTIEL ='/referentiel',
+  SECURITE ='/securite',
+  STATISTIQUE ='/statistiques',
   TYPOGRAPHY = '/typography',
   TABLES = '/tables',
   NOTIFICATION = '/notification',
@@ -8,5 +18,4 @@ export enum routes {
   UI_ELEMENTS_CHARTS = '/ui/charts',
   UI_ELEMENTS_MAP = '/ui/map',
   LOGIN = '/login'
-
 }
