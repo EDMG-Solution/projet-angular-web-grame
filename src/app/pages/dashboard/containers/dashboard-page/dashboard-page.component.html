@@ -1,28 +1,42 @@
 <app-layout>
-  <mat-toolbar class="page-header" role="heading">
-    <h1>Tableau de bord</h1>
-    <button mat-flat-button color="warn"> PDF</button>
-  </mat-toolbar>
-  <div class="charts-wrapper">
-    <div class="chart">
-      <app-visits-chart [visitsChartData]="visitsChartData$ | async"></app-visits-chart>
+<mat-card class="icons-wrapper">
+<mat-tab-group>
+  <mat-tab label="Tableau de bord ">
+    <div class="icons-content">
+      <div class="charts-wrapper">
+   
+        <div class="chart">
+          <app-visits-chart [visitsChartData]="visitsChartData$ | async"></app-visits-chart>
+        </div>
+        <div class="chart">
+          <app-performance-chart [performanceChartData]="performanceChartData$ | async"></app-performance-chart>
+        </div>
+        <div class="chart">
+          <app-server-chart [serverChartData]="serverChartData$ | async"></app-server-chart>
+        </div>
+        <div class="chart">
+          <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
+        </div>
+      </div>
+    
+      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
+    
+      <app-project-stat-chart [projectsStatsData]="projectsStatsData$ | async"></app-project-stat-chart>
+    
+      <app-support-requests [supportRequestData]="supportRequestData$ | async"></app-support-requests>
+    
     </div>
-    <div class="chart">
-      <app-performance-chart [performanceChartData]="performanceChartData$ | async"></app-performance-chart>
+  </mat-tab>
+
+  <mat-tab label="Fiche de synthèse">
+    <div class="icons-content">
+     <p>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, error. Est, optio earum numquam, rem nobis repudiandae qui libero, dolore ut ipsum quasi a delectus sequi blanditiis. Illo, facere accusamus?
+     </p>
     </div>
-    <div class="chart">
-      <app-server-chart [serverChartData]="serverChartData$ | async"></app-server-chart>
-    </div>
-    <div class="chart">
-      <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
-    </div>
-  </div>
+  </mat-tab>
+</mat-tab-group>
+</mat-card>
 
-  <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
-
-  <app-project-stat-chart [projectsStatsData]="projectsStatsData$ | async"></app-project-stat-chart>
-
-  <app-support-requests [supportRequestData]="supportRequestData$ | async"></app-support-requests>
-
-  <app-footer></app-footer>
+<app-footer></app-footer>
 </app-layout>

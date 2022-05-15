@@ -24,6 +24,8 @@ import { ReferentielComponent } from './pages/referentiel/referentiel.component'
 import { SecuriteComponent } from './pages/securite/securite.component';
 import { ParametrageComponent } from './pages/parametrage/parametrage.component';
 import { GestionChatingComponent } from './pages/gestion-chating/gestion-chating.component';
+import { MatTabsModule } from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { GestionChatingComponent } from './pages/gestion-chating/gestion-chating
     ReferentielComponent,
     SecuriteComponent,
     ParametrageComponent,
-    GestionChatingComponent
+    GestionChatingComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -52,9 +55,11 @@ import { GestionChatingComponent } from './pages/gestion-chating/gestion-chating
     ToastrModule.forRoot(),
     MatCardModule,
     MatButtonModule,
+    MatTabsModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts')
-    })
+    }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

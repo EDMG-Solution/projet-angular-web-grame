@@ -27,6 +27,7 @@ import {
 } from './components';
 import { SharedModule } from '../../shared/shared.module';
 import { DashboardService } from './services';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { DashboardService } from './services';
     MatInputModule,
     NgApexchartsModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    MatTabsModule
   ],
   exports: [
     DailyLineChartComponent
