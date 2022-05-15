@@ -30,6 +30,8 @@ import { DashboardService } from './services';
 import { MatTabsModule } from '@angular/material/tabs';
 
 
+
+
 @NgModule({
   declarations: [
     DashboardPageComponent,
@@ -59,6 +61,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     FormsModule,
     SharedModule,
     MatTabsModule
+  
+ 
   ],
   exports: [
     DailyLineChartComponent

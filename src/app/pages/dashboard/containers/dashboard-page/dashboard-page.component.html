@@ -2,6 +2,14 @@
 <mat-card class="icons-wrapper">
 <mat-tab-group>
   <mat-tab label="Tableau de bord ">
+    <mat-tab-group>
+      <mat-tab class="tab-dasbord"  label="Livrées et en Exploitation"></mat-tab>
+      <mat-tab class="tab-dasbord"  label="Cartographie des composantes"></mat-tab>
+      <mat-tab class="tab-dasbord"  label="Cartographie des finances"></mat-tab>
+      <mat-tab class="tab-dasbord"  label="Documentation "></mat-tab>
+      <mat-tab class="tab-dasbord"  label="Rapports"></mat-tab>
+      
+    </mat-tab-group>
     <div class="icons-content">
       <div class="charts-wrapper">
    
@@ -23,16 +31,21 @@
     
       <app-project-stat-chart [projectsStatsData]="projectsStatsData$ | async"></app-project-stat-chart>
     
-      <app-support-requests [supportRequestData]="supportRequestData$ | async"></app-support-requests>
+
     
     </div>
   </mat-tab>
 
   <mat-tab label="Fiche de synthèse">
     <div class="icons-content">
-     <p>
-         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, error. Est, optio earum numquam, rem nobis repudiandae qui libero, dolore ut ipsum quasi a delectus sequi blanditiis. Illo, facere accusamus?
-     </p>
+      <br>
+      <br>
+      
+      <app-support-requests [supportRequestData]="supportRequestData$ | async"></app-support-requests>
+      
+      
+      <br>
+      <br>
     </div>
   </mat-tab>
 </mat-tab-group>

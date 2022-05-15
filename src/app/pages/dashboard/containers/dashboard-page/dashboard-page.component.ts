@@ -17,8 +17,6 @@ import {
   templateUrl: './dashboard-page.component.html',
   styleUrls: ['./dashboard-page.component.scss']
 })
-
-
 export class DashboardPageComponent {
   public dailyLineChartData$: Observable<DailyLineChartData>;
   public performanceChartData$: Observable<PerformanceChartData>;
@@ -38,8 +36,3 @@ export class DashboardPageComponent {
     this.projectsStatsData$ = this.service.loadProjectsStatsData();
   }
 }
-
-
-
-
-
