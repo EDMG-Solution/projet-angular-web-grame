@@ -1,30 +1,31 @@
 <mat-card class="performance-chart">
   <mat-card-title class="performance-chart__header">
-    <h5 class="performance-chart__header-title">App Performance</h5>
+    <h5 class="performance-chart__header-title">Réformes phares
+    </h5>
 
-    <app-settings-menu></app-settings-menu>
+   
   </mat-card-title>
 
   <mat-card-content class="performance-chart__content">
     <div class="performance-chart__content-header">
       <div class="performance-chart__content-header-item">
         <div class="performance-chart__content-header-item-icon_blue"></div>
-        <span class="performance-chart__content-header-item-text">Integration</span>
+        <span class="performance-chart__content-header-item-text">Non Lancé </span>
       </div>
       <div class="performance-chart__content-header-item">
         <div class="performance-chart__content-header-item-icon_yellow"></div>
-        <span class="performance-chart__content-header-item-text">SDK</span>
+        <span class="performance-chart__content-header-item-text">En cours</span>
       </div>
     </div>
 
     <div class="performance-chart__progress-wrapper">
-      <h6 class="performance-chart__progress-title">Integration</h6>
+      <h6 class="performance-chart__progress-title">Non Lancé</h6>
       <mat-progress-bar
         class="performance-chart__progress-bar"
         mode="determinate"
         [value]=performanceChartData.integration
       ></mat-progress-bar>
-      <h6 class="performance-chart__progress-title">SDK</h6>
+      <h6 class="performance-chart__progress-title">En cours</h6>
       <mat-progress-bar
         class="performance-chart__progress-bar"
         mode="determinate"

@@ -3,18 +3,38 @@
 <mat-tab-group>
   <mat-tab label="Tableau de bord ">
     <mat-tab-group>
-      <mat-tab class="tab-dasbord"  label="Livrées et en Exploitation"></mat-tab>
-      <mat-tab class="tab-dasbord"  label="Cartographie des composantes"></mat-tab>
-      <mat-tab class="tab-dasbord"  label="Cartographie des finances"></mat-tab>
-      <mat-tab class="tab-dasbord"  label="Documentation "></mat-tab>
-      <mat-tab class="tab-dasbord"  label="Rapports"></mat-tab>
-      
-    </mat-tab-group>
-    <div class="icons-content">
+
+      <mat-tab class="tab-dasbord"  label="Tableau de bord">
+        <br>
+        <h5 class="performance-chart__header-title"> TABLEAU DE SUIVI DES PERFORMANCES DES PROJETS ET REFORMES PHARES</h5>
+     
+
+      <br>
+   
       <div class="charts-wrapper">
    
         <div class="chart">
-          <app-visits-chart [visitsChartData]="visitsChartData$ | async"></app-visits-chart>
+         
+
+          <mat-card class="revenue-chart">
+            <mat-card-title class="revenue-chart__header">
+              <h5 class="revenue-chart__header-title">Synthèse</h5>
+          
+             
+            </mat-card-title>
+          
+            <mat-card-content class="revenue-chart__content">
+              <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+                <mat-chip *ngFor="let chip of availableColors" selected [color]="chip.color">
+                  {{chip.name}}
+                </mat-chip>
+              </mat-chip-list>
+            </mat-card-content>
+          </mat-card>
+
+         
+         
+         
         </div>
         <div class="chart">
           <app-performance-chart [performanceChartData]="performanceChartData$ | async"></app-performance-chart>
@@ -26,13 +46,36 @@
           <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
         </div>
       </div>
-    
-      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
-    
-      <app-project-stat-chart [projectsStatsData]="projectsStatsData$ | async"></app-project-stat-chart>
-    
 
+       
+
+      </mat-tab>
+      <mat-tab class="tab-dasbord"  label="Livrées et en Exploitation">
+        <h5 class="revenue-chart__header-title">   Livrées et en Exploitation </h5>
+      </mat-tab>
+      <mat-tab class="tab-dasbord"  label="Cartographie des composantes">
+        <h5 class="revenue-chart__header-title">   Cartographie des Composantes </h5>
+      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
+
+      </mat-tab>
+      <mat-tab class="tab-dasbord"  label="Cartographie des finances">
+        <h5 class="revenue-chart__header-title">  Cartographie des finances </h5>
+      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
+
+      </mat-tab>
+      <mat-tab class="tab-dasbord"  label="Documentation ">
+        <h5 class="revenue-chart__header-title">  Documentation </h5>
+      </mat-tab>
+      <mat-tab class="tab-dasbord"  label="Rapports">
+        <h5 class="revenue-chart__header-title">  Rapports </h5>
+      </mat-tab>
+      
+    </mat-tab-group>
+    <div class="icons-content">
     
+    
+     
+
     </div>
   </mat-tab>
 

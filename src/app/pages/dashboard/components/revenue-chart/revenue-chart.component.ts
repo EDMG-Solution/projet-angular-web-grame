@@ -19,14 +19,14 @@ export class RevenueChartComponent implements OnInit {
 
   public initChart(): void {
     this.revenueChart = {
-      color: [colors.GREEN, colors.PINK, colors.YELLOW, colors.BLUE],
+      color: [colors.GREEN, colors.PINK, colors.YELLOW, colors.BLUE ,colors.ORENGE],
       tooltip: {
         trigger: 'item'
       },
       legend: {
         top: 'center',
         right: 'right',
-        data: ['Group A', 'Group B', 'Group C', 'Group D'],
+        data: ['Non lancé', 'Structuration', 'Exploitation', 'Bloqué', 'Exécution'],
         textStyle: {
           color: '#6E6E6E'
         }
@@ -47,19 +47,23 @@ export class RevenueChartComponent implements OnInit {
         avoidLabelOverlap: false,
         data: [
           {
-            name: 'Group A',
+            name: 'Non lancé',
             value: this.revenueCharData.groupA
           },
           {
-            name: 'Group B',
+            name: 'Structuration',
             value: this.revenueCharData.groupB
           },
           {
-            name: 'Group C',
+            name: 'Exploitation',
             value: this.revenueCharData.groupC
           },
           {
-            name: 'Group D',
+            name: 'Bloqué',
+            value: this.revenueCharData.groupD
+          },
+          {
+            name: 'Exécution',
             value: this.revenueCharData.groupD
           },
         ]

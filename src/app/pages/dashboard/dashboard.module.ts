@@ -14,7 +14,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule } from '@angular/forms';
-
+import { MatChipsModule } from '@angular/material/chips';
 import { DashboardPageComponent } from './containers';
 import {
   VisitsChartComponent,
@@ -28,7 +28,12 @@ import {
 import { SharedModule } from '../../shared/shared.module';
 import { DashboardService } from './services';
 import { MatTabsModule } from '@angular/material/tabs';
+import {ThemePalette} from '@angular/material/core';
 
+export interface ChipColor {
+  name: string;
+  color: ThemePalette;
+}
 
 
 
@@ -60,7 +65,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     NgApexchartsModule,
     FormsModule,
     SharedModule,
-    MatTabsModule
+    MatTabsModule,
+    MatChipsModule,
+    
   
  
   ],
@@ -71,4 +78,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     DashboardService
   ]
 })
-export class DashboardModule { }
+export class DashboardModule {
+ 
+ }
+

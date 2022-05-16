@@ -4,5 +4,6 @@ export enum colors {
   LIGHT_BLUE = '#F8F9FF',
   PINK = '#ff4081',
   GREEN = '#3CD4A0',
-  VIOLET = '#9013FE'
+  VIOLET = '#9013FE',
+  ORENGE='#FF4500',
 }

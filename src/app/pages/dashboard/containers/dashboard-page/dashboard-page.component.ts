@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-
+import {ThemePalette} from '@angular/material/core';
 import { DashboardService } from '../../services';
 import {
   DailyLineChartData,
@@ -11,6 +11,11 @@ import {
   SupportRequestData,
   VisitsChartData
 } from '../../models';
+
+export interface ChipColor {
+  name: string;
+  color: ThemePalette;
+}
 
 @Component({
   selector: 'app-dashboard-page',
@@ -25,6 +30,12 @@ export class DashboardPageComponent {
   public supportRequestData$: Observable<SupportRequestData[]>;
   public visitsChartData$: Observable<VisitsChartData>;
   public projectsStatsData$: Observable<ProjectStatData>;
+  availableColors: ChipColor[] = [
+   
+    {name: '71 | Satisfaisant', color: 'primary'},
+    {name: '48 | Alerte', color: 'accent'},
+    {name: '16 | Blocage', color: 'warn'},
+  ];
 
   constructor(private service: DashboardService) {
     this.dailyLineChartData$ = this.service.loadDailyLineChartData();
