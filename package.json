@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~11.2.13",
     "@angular/platform-browser-dynamic": "~11.2.13",
     "@angular/router": "~11.2.13",
+    "angular-vertical-tabs": "github:SamuelMarks/angular-vertical-material-tabs",
     "apexcharts": "3.26.2",
     "echarts": "5.1.1",
     "font-awesome": "^4.7.0",

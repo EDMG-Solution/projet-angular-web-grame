@@ -109,3 +109,41 @@ mat-chip {
 .demo-table {
   width: 100%;
 }
+.example-form {
+  min-width: 150px;
+  max-width: 150px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.formulaire-des-rapports{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.section-form1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+section.section-form2 {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+}
+
+.mat-verticale-tabs{
+  
+  .mat-tab-labels {
+    display: flex;
+    flex-direction: column !important;
+}
+
+}

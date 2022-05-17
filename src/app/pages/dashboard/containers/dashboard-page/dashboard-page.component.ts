@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import {ThemePalette} from '@angular/material/core';
+import {FormControl} from '@angular/forms';
 import { DashboardService } from '../../services';
 import {
   DailyLineChartData,
@@ -20,22 +21,16 @@ export interface ChipColor {
 
 export interface PeriodicElement {
   name: string;
-  position: number;
-  weight: number;
+  position: string;
+  weight: string;
   symbol: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {position:'Mise en place de 100-150 projets d agrégation HVA & élevage', name: 'Service universel de l énergie', weight:' 2-3 Plateformes industrielles intégrées', symbol: ' Dakar médical city'},
+  {position: 'Développement de 3 corridors céréaliers', name: 'Dakar médical city', weight:'Hub Logistique Intégré', symbol: ' Hub aérien régional'},
+  {position: 'Plan de Relance de l Electricité', name: 'Projets SOGIP', weight:'Projets SOGIP', symbol: ' Service universel de l énergie'},
+  
 ];
 
 @Component({
@@ -43,7 +38,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './dashboard-page.component.html',
   styleUrls: ['./dashboard-page.component.scss']
 })
-export class DashboardPageComponent {
+export class DashboardPageComponent  {
+
+
   public dailyLineChartData$: Observable<DailyLineChartData>;
   public performanceChartData$: Observable<PerformanceChartData>;
   public revenueChartData$: Observable<RevenueChartData>;
@@ -64,22 +61,22 @@ export class DashboardPageComponent {
   columns = [
     {
       columnDef: 'position',
-      header: 'No.',
+      header: 'Agriculture, produits de la mer et agro-alimentaire',
       cell: (element: PeriodicElement) => `${element.position}`,
     },
     {
       columnDef: 'name',
-      header: 'Name',
+      header: 'Développement de l habitat social et d un écosystème de la construction',
       cell: (element: PeriodicElement) => `${element.name}`,
     },
     {
       columnDef: 'weight',
-      header: 'Weight',
+      header: 'Hub Logistique et industriel Régional',
       cell: (element: PeriodicElement) => `${element.weight}`,
     },
     {
       columnDef: 'symbol',
-      header: 'Symbol',
+      header: 'Hub Régional Multiservices et Tourisme ',
       cell: (element: PeriodicElement) => `${element.symbol}`,
     },
   ];
@@ -95,4 +92,12 @@ export class DashboardPageComponent {
     this.visitsChartData$ = this.service.loadVisitsChartData();
     this.projectsStatsData$ = this.service.loadProjectsStatsData();
   }
+
+  myControl1 = new FormControl();
+ 
+  myControl2 = new FormControl();
+  options2: string[] = ['2022', '2021', '2020' , '2019', '2018'];
+  myControl3 = new FormControl();
+  options3: string[] = ['T1 2021', 'T2 2021', 'T3 2021' , 'T4 2021 ', 'T 5 2021'];
+  options1: string[] = ['Projet1', 'Projet 2', 'Projet3' , 'Projet 4', 'Projet 5'];
 }

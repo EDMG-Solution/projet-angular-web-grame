@@ -31,9 +31,9 @@ type ChartOptions = {
 };
 
 enum matSelectedFields {
-  daily = 'Daily',
-  weekly = 'Weekly',
-  monthly = 'Monthly'
+  daily = 'Non lancé',
+  weekly = 'En exécution',
+  monthly = 'Livré'
 }
 
 @Component({
@@ -73,17 +73,17 @@ export class DailyLineChartComponent implements OnInit, AfterViewInit {
       },
       series: [
         {
-          name: 'Mobile',
+          name: 'Non lancé',
           type: 'line',
           data: data.mobile,
         },
         {
-          name: 'Desktop',
+          name: 'En exécution',
           type: 'area',
           data: data.desktop
         },
         {
-          name: 'Tablet',
+          name: 'Livré',
           type: 'line',
           data: data.tablet
         }
@@ -163,17 +163,17 @@ export class DailyLineChartComponent implements OnInit, AfterViewInit {
           ...this.chartOptions,
           series: [
             {
-              name: 'Mobile',
+              name: 'Non lancé',
               type: 'line',
               data: this.dailyLineChartData.dailyData.mobile,
             },
             {
-              name: 'Desktop',
+              name: 'En exécution',
               type: 'area',
               data: this.dailyLineChartData.dailyData.desktop,
             },
             {
-              name: 'Tablet',
+              name: 'Livré',
               type: 'line',
               data: this.dailyLineChartData.dailyData.tablet,
             }
@@ -190,12 +190,12 @@ export class DailyLineChartComponent implements OnInit, AfterViewInit {
               data: this.dailyLineChartData.weeklyData.mobile,
             },
             {
-              name: 'Desktop',
+              name: 'En exécution',
               type: 'area',
               data: this.dailyLineChartData.weeklyData.desktop,
             },
             {
-              name: 'Tablet',
+              name: 'Livré',
               type: 'line',
               data: this.dailyLineChartData.weeklyData.tablet,
             }
@@ -207,17 +207,17 @@ export class DailyLineChartComponent implements OnInit, AfterViewInit {
           ...this.chartOptions,
           series: [
             {
-              name: 'Mobile',
+              name: 'Non lancé',
               type: 'line',
               data: this.dailyLineChartData.monthlyData.mobile,
             },
             {
-              name: 'Desktop',
+              name: 'En exécution',
               type: 'area',
               data: this.dailyLineChartData.monthlyData.desktop,
             },
             {
-              name: 'Tablet',
+              name: 'Livré',
               type: 'line',
               data: this.dailyLineChartData.monthlyData.tablet,
             }
