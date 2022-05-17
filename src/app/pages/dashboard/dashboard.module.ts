@@ -28,12 +28,10 @@ import {
 import { SharedModule } from '../../shared/shared.module';
 import { DashboardService } from './services';
 import { MatTabsModule } from '@angular/material/tabs';
-import {ThemePalette} from '@angular/material/core';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
-export interface ChipColor {
-  name: string;
-  color: ThemePalette;
-}
+
+
 
 
 
@@ -67,6 +65,9 @@ export interface ChipColor {
     SharedModule,
     MatTabsModule,
     MatChipsModule,
+    CdkAccordionModule,
+
+    
     
   
  
