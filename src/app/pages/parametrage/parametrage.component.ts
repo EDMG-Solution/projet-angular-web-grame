@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-parametrage',
@@ -9,7 +10,9 @@ export class ParametrageComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
 
 }
+export class CardOverviewExample {}
+
