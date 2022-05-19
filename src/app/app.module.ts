@@ -25,6 +25,9 @@ import { SecuriteComponent } from './pages/securite/securite.component';
 import { ParametrageComponent } from './pages/parametrage/parametrage.component';
 import { GestionChatingComponent } from './pages/gestion-chating/gestion-chating.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 
 @NgModule({
@@ -56,6 +59,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatCardModule,
     MatButtonModule,
     MatTabsModule,
+    MatDatepickerModule,
+    MatCheckboxModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts')
     }),
