@@ -6,6 +6,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   styleUrls: ['./finances.component.css']
 })
 export class FinancesComponent implements OnInit {
+  
 
   constructor() { }
 
