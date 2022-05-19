@@ -1,10 +1,63 @@
 <app-layout>
-    <mat-card>
 
-        
+  <mat-card class="icons-wrapper">
+    <mat-tab-group>
+      <mat-tab label="LIMITE DATE SAISIE">
+        <div class="icons-content">
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+              <section class="example-section">
+                <mat-checkbox class="example-margin"  [color]="task.color">Appliquer le verrou CDD</mat-checkbox>
+              </section>
+            <div>
+              <mat-list>
+                <mat-list-item> Configuration CDD</mat-list-item>
+                <mat-divider></mat-divider>
+              </mat-list>
+            </div>
+
+            <mat-form-field appearance="">
+              <mat-select>
+                <mat-option value="one">1</mat-option>
+                <mat-option value="two">2</mat-option>
+                <mat-option value="one">3</mat-option>
+                <mat-option value="two">4</mat-option>
+                <mat-option value="one">5</mat-option>
+                <mat-option value="two">6</mat-option>
+                <mat-option value="one">7</mat-option>
+                <mat-option value="two">8</mat-option>
+                <mat-option value="one">9</mat-option>
+                <mat-option value="two">10</mat-option>
+                <mat-option value="one">11</mat-option>
+              </mat-select>
+            </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <section class="example-section">
+                <mat-checkbox class="example-margin"  [color]="task.color">Appliquer le verrou CDP / PF</mat-checkbox>
+              </section>
+
+              <div>
+                <mat-list>
+                  <mat-list-item> Configuration CDP/PF</mat-list-item>
+                  <mat-divider></mat-divider>
+                </mat-list>
+              </div>
+
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </mat-tab>
+      <mat-tab label="LIMITE REMONTE PROBLEME">
+        <div class="icons-content">
+         <p>
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, error. Est, optio earum numquam, rem nobis repudiandae qui libero, dolore ut ipsum quasi a delectus sequi blanditiis. Illo, facere accusamus?
+         </p>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
 
 
 
-    </mat-card>
-      
 </app-layout>

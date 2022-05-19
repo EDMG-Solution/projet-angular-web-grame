@@ -13,7 +13,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { NgApexchartsModule } from 'ng-apexcharts';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatChipsModule } from '@angular/material/chips';
 import { DashboardPageComponent } from './containers';
 import {
@@ -28,12 +28,10 @@ import {
 import { SharedModule } from '../../shared/shared.module';
 import { DashboardService } from './services';
 import { MatTabsModule } from '@angular/material/tabs';
-import {ThemePalette} from '@angular/material/core';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
-export interface ChipColor {
-  name: string;
-  color: ThemePalette;
-}
 
 
 
@@ -46,7 +44,8 @@ export interface ChipColor {
     RevenueChartComponent,
     DailyLineChartComponent,
     SupportRequestsComponent,
-    ProjectStatChartComponent
+    ProjectStatChartComponent,
+   
   ],
   imports: [
     CommonModule,
@@ -67,6 +66,13 @@ export interface ChipColor {
     SharedModule,
     MatTabsModule,
     MatChipsModule,
+    CdkAccordionModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule ,
+    
+    
+
+    
     
   
  
