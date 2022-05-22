@@ -69,13 +69,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     CdkAccordionModule,
     MatAutocompleteModule,
     ReactiveFormsModule ,
-    
-    
 
-    
-    
-  
- 
   ],
   exports: [
     DailyLineChartComponent

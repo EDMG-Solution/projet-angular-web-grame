@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-
+import {MatTreeModule} from '@angular/material/tree';
 
 
 
@@ -71,6 +71,7 @@ import { MatTabsModule } from '@angular/material/tabs';
   imports: [
     BrowserModule,
     MatToolbarModule,
+    MatTreeModule,
     MatButtonToggleModule,
     SharedModule,
     CommonModule,

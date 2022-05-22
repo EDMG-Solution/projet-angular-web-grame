@@ -24,6 +24,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ChartsService } from './services';
 import { DashboardModule } from '../dashboard/dashboard.module';
 import { googleMapKey } from './consts';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,8 @@ import { googleMapKey } from './consts';
     MatToolbarModule,
     SharedModule,
     DashboardModule,
+    MatTreeModule,
+
   ],
   providers: [
     ChartsService
