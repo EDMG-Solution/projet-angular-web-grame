@@ -36,7 +36,8 @@ const routes: Routes = [
     component: GestiondesalertesComponent
   },
   {
-  //  path: 'issue-log',
+  
+    path: 'issue-log',
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: IssueLogComponent
