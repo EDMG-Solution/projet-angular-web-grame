@@ -1,43 +1,203 @@
 <app-layout>
-  <mat-toolbar role="heading" class="page-header">
-    <h1>Charts Page - Data Display</h1>
-    <button mat-flat-button color="warn">Latest Reports</button>
-  </mat-toolbar>
+  <mat-card class="icons-wrapper">
+  <mat-tab-group>
+  
+    <mat-tab label="Issue log">
+      <div class="icons-content">
+        
+        <div class="card-interne">
+          <div class="sectionA">
+            <br> 
+          <label for="">Projets Phares/Reformes</label>
+          <br> 
+            <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+              <!-- This is the tree node template for leaf nodes -->
+              <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                <!-- use a disabled button to provide padding for tree leaf -->
+                <button mat-icon-button disabled></button>
+                {{node.name}}
+              </mat-tree-node>
+              <!-- This is the tree node template for expandable nodes -->
+              <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+                <button mat-icon-button matTreeNodeToggle
+                        [attr.aria-label]="'Toggle ' + node.name">
+                  <mat-icon class="mat-icon-rtl-mirror">
+                    {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                  </mat-icon>
+                </button>
+                {{node.name}}
+              </mat-tree-node>
+            </mat-tree>
+            
+          </div>
+          <div class="sectionB">
+            <mat-card>
+              <div class="titre-button">
+    
+                <button mat-raised-button color="success">
+                  Exporter les problemes
+                </button>
+              </div>
+            </mat-card>
+            <mat-card>
+             
+           
 
-  <div class="charts-content">
-    <div class="charts-content__charts-wrapper">
 
-      <mat-card class="charts-content__chart-item">
-        <mat-card-title>
-          <p>Apex Line Chart</p>
-        </mat-card-title>
-        <app-line-chart [lineChartData]="lineChartData$ | async"></app-line-chart>
-      </mat-card>
+                  <table class="mdl-data-table mdl-js-data-table table-issulog">
+                    <thead>
+                      <tr class="head-table">
+                        <th class="mdl-data-table__cell--non-numeric">Projet/Reform</th>
+                        <th class="mdl-data-table__cell--non-numeric">Comp/Axe</th>
+                       
+                        <th class="mdl-data-table__cell--non-numeric">Libellé</th>
+                        <th class="mdl-data-table__cell--non-numeric">Date derniere</th>
+                        <th class="mdl-data-table__cell--non-numeric">Nombre de fois</th>
+                        <th class="mdl-data-table__cell--non-numeric"> Date ident.</th>
+                        <th class="mdl-data-table__cell--non-numeric"> 	
+                          Nature</th>
+                        <th class="mdl-data-table__cell--non-numeric"> Etat</th>
+                        <th class="mdl-data-table__cell--non-numeric"> Priorité</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
+                        <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">0</td>
+                        <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
+                        <td class="mdl-data-table__cell--non-numeric">Haute</td>
+                   
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
+                        <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">0</td>
+                        <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
+                        <td class="mdl-data-table__cell--non-numeric">Haute</td>
+                   
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
+                        <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">0</td>
+                        <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
+                        <td class="mdl-data-table__cell--non-numeric">Haute</td>
+                   
+                      </tr>
 
-      <mat-card class="charts-content__chart-item">
-        <mat-card-title>
-          <p>Apex Heatmap Chart</p>
-        </mat-card-title>
-        <app-heatmap-chart [heatmapChartData]="heatmapChartData$ | async"></app-heatmap-chart>
-      </mat-card>
-    </div>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
+                        <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">0</td>
+                        <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
+                        <td class="mdl-data-table__cell--non-numeric">Haute</td>
+                   
+                      </tr>
+                      <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
+                        <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
+                        <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">0</td>
+                        <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier</td>
+                        <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
+                        <td class="mdl-data-table__cell--non-numeric">Haute</td>
+                   
+                      </tr>
+                      
+                     
 
-    <div class="charts-content__charts-wrapper">
-      <mat-card class="charts-content__chart-item">
-        <mat-card-title>
-          <p>Apex Dashed Line Chart</p>
-        </mat-card-title>
-        <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
-      </mat-card>
 
-      <mat-card class="charts-content__chart-item">
-        <mat-card-title>
-          <p>Apex Pie Chart</p>
-        </mat-card-title>
-        <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
-      </mat-card>
-    </div>
-  </div>
+                    </tbody>
+                  </table>
 
-  <app-footer></app-footer>
+
+               
+                
+              
+               
+         
+
+
+            </mat-card>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </mat-tab>
+    <mat-tab label="Statistiques"> 
+      <mat-tab-group>
+        <mat-tab label="Suivi des problèmes"> 
+          <div class="charts-content">
+            <div class="charts-content__charts-wrapper">
+        
+              <mat-card class="charts-content__chart-item">
+                <mat-card-title>
+                  <p>Apex Line Chart</p>
+                </mat-card-title>
+                <app-line-chart [lineChartData]="lineChartData$ | async"></app-line-chart>
+              </mat-card>
+        
+              <mat-card class="charts-content__chart-item">
+                <mat-card-title>
+                  <p>Apex Heatmap Chart</p>
+                </mat-card-title>
+                <app-heatmap-chart [heatmapChartData]="heatmapChartData$ | async"></app-heatmap-chart>
+              </mat-card>
+            </div>
+        
+            <div class="charts-content__charts-wrapper">
+              <mat-card class="charts-content__chart-item">
+                <mat-card-title>
+                  <p>Apex Dashed Line Chart</p>
+                </mat-card-title>
+                <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
+              </mat-card>
+        
+              <mat-card class="charts-content__chart-item">
+                <mat-card-title>
+                  <p>Apex Pie Chart</p>
+                </mat-card-title>
+                <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
+              </mat-card>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="Taux de succès dans la résolution des problèmes"> Content 2 </mat-tab>
+        <mat-tab label="Enjeux financiers des problèmes suivis"> Content 3 </mat-tab>
+        <mat-tab label="Résolution des problèmes"> Content 3 </mat-tab>
+      </mat-tab-group>
+      
+
+     
+
+    </mat-tab>
+    
+  </mat-tab-group>
+  
+ 
+</mat-card>
+
 </app-layout>
