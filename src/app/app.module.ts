@@ -17,6 +17,17 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTreeModule} from '@angular/material/tree';
+
+
+
+
+
+
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -36,7 +47,6 @@ import { SecuriteComponent } from './pages/securite/securite.component';
 import { ParametrageComponent } from './pages/parametrage/parametrage.component';
 import { GestionChatingComponent } from './pages/gestion-chating/gestion-chating.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import {MatTreeModule} from '@angular/material/tree';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Popup1Component } from './pages/popup1/popup1.component';
 import { MatCommonModule } from '@angular/material/core';
@@ -65,7 +75,11 @@ import { MatBadgeModule } from '@angular/material/badge';
   ],
   imports: [
     BrowserModule,
+    MatToolbarModule,
+    MatTreeModule,
+    MatButtonToggleModule,
     SharedModule,
+    CommonModule,
     AuthModule,
     MatIconModule,
     MatSelectModule,

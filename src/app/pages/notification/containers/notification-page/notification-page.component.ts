@@ -57,7 +57,6 @@ export class NotificationPageComponent {
       }
     );
   }
-
   public showInfoToastr(): void {
     this.toastrService.show(
       null,
