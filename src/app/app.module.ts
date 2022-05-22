@@ -17,6 +17,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 
@@ -66,7 +70,10 @@ import { MatTabsModule } from '@angular/material/tabs';
   ],
   imports: [
     BrowserModule,
+    MatToolbarModule,
+    MatButtonToggleModule,
     SharedModule,
+    CommonModule,
     AuthModule,
     MatIconModule,
     MatSelectModule,

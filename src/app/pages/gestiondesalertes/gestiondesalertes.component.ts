@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-gestiondesalertes',
   templateUrl: './gestiondesalertes.component.html',
-  styleUrls: ['./gestiondesalertes.component.css']
+  styleUrls: ['./gestiondesalertes.component.scss']
 })
 export class GestiondesalertesComponent implements OnInit {
 
@@ -13,3 +13,5 @@ export class GestiondesalertesComponent implements OnInit {
   }
 
 }
+
+export class ButtonToggleOverviewExample {}
