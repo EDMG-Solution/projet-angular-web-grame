@@ -1,0 +1,16 @@
+.card-interne {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sectionB {
+    width: 80%;
+}
+
+
+button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-success {
+    background: #33c102;
+    color: white;
+}
+

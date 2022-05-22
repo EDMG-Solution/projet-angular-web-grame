@@ -217,7 +217,7 @@ export class DailyLineChartComponent implements OnInit, AfterViewInit {
               data: this.dailyLineChartData.monthlyData.desktop,
             },
             {
-              name: 'Livré',
+              name: 'Livréy',
               type: 'line',
               data: this.dailyLineChartData.monthlyData.tablet,
             }
