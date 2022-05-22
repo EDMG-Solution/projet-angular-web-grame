@@ -14,6 +14,7 @@ import { ParametrageComponent } from './pages/parametrage/parametrage.component'
 import { ReferentielComponent } from './pages/referentiel/referentiel.component';
 import { SecuriteComponent } from './pages/securite/securite.component';
 import { StatistiquesComponent } from './pages/statistiques/statistiques.component';
+import { Popup1Component } from './pages/popup1/popup1.component';
 
 const routes: Routes = [
   {
@@ -35,7 +36,7 @@ const routes: Routes = [
     component: GestiondesalertesComponent
   },
   {
-    path: 'issue-log',
+  //  path: 'issue-log',
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: IssueLogComponent
@@ -58,6 +59,13 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     component: ParametrageComponent
   },
+  {
+    path:'popup1',
+    pathMatch:'full',
+    canActivate:[AuthGuard],
+    component:Popup1Component
+  },
+
   {
     path: 'referentiel',
     pathMatch: 'full',

@@ -1321,6 +1321,11 @@
     "node-gyp" "^7.1.0"
     "read-package-json-fast" "^2.0.1"
 
+"@popperjs/core@^2.11.5":
+  "integrity" "sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.5.tgz"
+  "version" "2.11.5"
+
 "@schematics/angular@11.2.12":
   "integrity" "sha512-QCFdJhJtHrytl2L9VAdKYzSS1+R5LpjQ+pw3f/10YeEEoUHk7QyuYXmMnreCYBWSKrloO+3Q+vhdnVWUQZSRng=="
   "resolved" "https://registry.npmjs.org/@schematics/angular/-/angular-11.2.12.tgz"
@@ -2090,6 +2095,11 @@
   "integrity" "sha1-aN/1++YMUes3cl6p4+0xDcwed24="
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"bootstrap@^5.2.0-beta1":
+  "integrity" "sha512-6qbgs177WZEFY4SLQUq3tEHayYG80nfDmyTpdKi0MJqRMdS+HAoq24+YKfx6wf+nHY0rx8zrh477J1lFu4WzOA=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.0-beta1.tgz"
+  "version" "5.2.0-beta1"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="

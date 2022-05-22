@@ -4,7 +4,7 @@ export enum routes {
   AVANCEMENT ='/avancement-detaille',
   GESTION_CHATING ='/gestion-chating',
   GESTION_ALERTES ='/gestiondesalertes',
-  ISSUE_LOG ='/issue-log',
+  ISSUE_LOG ='/ui/charts',
   MEDIATHEQUE ='/mediatheque',
   MESSAGERIES ='/messageries',
   PARAMETRAGES ='/parametrage',
@@ -15,7 +15,5 @@ export enum routes {
   TABLES = '/tables',
   NOTIFICATION = '/notification',
   UI_ELEMENTS_ICONS = '/ui/icons',
-  UI_ELEMENTS_CHARTS = '/ui/charts',
-  UI_ELEMENTS_MAP = '/ui/map',
   LOGIN = '/login'
 }

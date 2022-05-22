@@ -23,6 +23,7 @@
     "@angular/router": "~11.2.13",
     "angular-vertical-tabs": "github:SamuelMarks/angular-vertical-material-tabs",
     "apexcharts": "3.26.2",
+    "bootstrap": "^5.2.0-beta1",
     "echarts": "5.1.1",
     "font-awesome": "^4.7.0",
     "ng-apexcharts": "1.5.9",

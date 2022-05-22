@@ -372,3 +372,51 @@ div.apexcharts-xaxistooltip-bottom:after {
 .mat-tab-label-content {
   font-size: 12px;
 }
+
+
+.section-bleue {
+  .mat-tab-labels {
+    background: #526dfe;
+    color: white;
+}
+
+table.mdl-data-table.mdl-js-data-table.table-issulog {
+  width: 100%;
+  text-align: left;
+}
+mat-tab-header .mat-tab-label-active {
+  color: #ffffff;
+}
+}
+.titre-button{
+  display: flex;
+}
+
+.titre-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+table.mdl-data-table.mdl-js-data-table.ng-star-inserted {
+  width: 100%;
+  text-align: justify;
+}
+
+
+.card-interne {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sectionB {
+  width: 80%;
+}
+
+
+button.mat-focus-indicator.mat-raised-button.mat-button-base.mat-success {
+  background: #33c102;
+  color: white;
+}
