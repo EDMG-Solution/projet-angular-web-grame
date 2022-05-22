@@ -122,7 +122,7 @@
                         <td class="mdl-data-table__cell--non-numeric">Haute</td>
                    
                       </tr>
-                      
+
                      
 
 
@@ -185,9 +185,58 @@
             </div>
           </div>
         </mat-tab>
-        <mat-tab label="Taux de succès dans la résolution des problèmes"> Content 2 </mat-tab>
-        <mat-tab label="Enjeux financiers des problèmes suivis"> Content 3 </mat-tab>
-        <mat-tab label="Résolution des problèmes"> Content 3 </mat-tab>
+        <mat-tab label="Taux de succès dans la résolution des problèmes"> 
+          <div class="charts-content__charts-wrapper">
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Dashed Line Chart</p>
+              </mat-card-title>
+              <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
+            </mat-card>
+      
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Pie Chart</p>
+              </mat-card-title>
+              <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
+            </mat-card>
+          </div>
+        </mat-tab>
+        <mat-tab label="Enjeux financiers des problèmes suivis">
+          <div class="charts-content__charts-wrapper">
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Dashed Line Chart</p>
+              </mat-card-title>
+              <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
+            </mat-card>
+      
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Pie Chart</p>
+              </mat-card-title>
+              <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
+            </mat-card>
+          </div>
+        </mat-tab>
+        <mat-tab label="Résolution des problèmes"> 
+          <div class="charts-content__charts-wrapper">
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Dashed Line Chart</p>
+              </mat-card-title>
+              <app-dashed-line-chart [dashedLineChartData]="dashedLineChartData$ | async"></app-dashed-line-chart>
+            </mat-card>
+      
+            <mat-card class="charts-content__chart-item">
+              <mat-card-title>
+                <p>Apex Pie Chart</p>
+              </mat-card-title>
+              <app-pie-chart [pieChartData]="pieChartData$ | async"></app-pie-chart>
+            </mat-card>
+          </div>
+        
+        </mat-tab>
       </mat-tab-group>
       
 
