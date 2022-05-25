@@ -1,3 +1,4 @@
+
 @import "/src/app/styles/variables";
 @import "/src/app/styles/colors";
 @import "/src/app/styles/font";
@@ -325,6 +326,23 @@
   transform: rotate(180deg);
 }
 
-table {
-  width: 100%;
+
+.example-section {
+  margin: 12px 0;
 }
+
+.example-margin {
+  margin: 0 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+
+

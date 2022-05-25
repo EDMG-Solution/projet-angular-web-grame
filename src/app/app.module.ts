@@ -51,6 +51,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { Popup1Component } from './pages/popup1/popup1.component';
 import { MatCommonModule } from '@angular/material/core';
 import { MatBadgeModule } from '@angular/material/badge';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -80,6 +81,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatButtonToggleModule,
     SharedModule,
     CommonModule,
+    MatTableModule,
     AuthModule,
     MatIconModule,
     MatSelectModule,

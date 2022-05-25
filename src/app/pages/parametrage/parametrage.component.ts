@@ -11,7 +11,7 @@ export interface Task {
 @Component({
   selector: 'app-parametrage',
   templateUrl: './parametrage.component.html',
-  styleUrls: ['./parametrage.component.css']
+  styleUrls: ['./parametrage.component.scss']
 })
 export class ParametrageComponent implements OnInit {
 
@@ -58,4 +58,5 @@ export class CardOverviewExample {}
 export class GridListOverviewExample {}
 export class DividerOverviewExample {}
 export class FormFieldOverviewExample {}
+export class FormFieldHintExample {}
 

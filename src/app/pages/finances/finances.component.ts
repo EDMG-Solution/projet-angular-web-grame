@@ -3,7 +3,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 @Component({
   selector: 'app-finances',
   templateUrl: './finances.component.html',
-  styleUrls: ['./finances.component.css']
+  styleUrls: ['./finances.component.scss']
 })
 export class FinancesComponent implements OnInit {
   
