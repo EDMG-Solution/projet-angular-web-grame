@@ -17,10 +17,21 @@ interface FoodNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'ANNEES',
-    children: [{name: '2022'}, {name: '2021'}, {name: '2020'}, {name: '2019'}, {name: '2018'}, {name: '2017'}],
+    name: ' Projets phares',
+    children: [{name: 'Projet 1'}, {name: 'Projet 2'}, {name: 'Projet 3'}],
   },
-  
+  {
+    name: 'Réformes phares',
+    children: [{name: 'Projet 1'}, {name: 'Projet 2'}, {name: 'Projet 3'}],
+  },
+  {
+    name: 'Initiative présidentielle',
+    children: [{name: 'Projet 1'}, {name: 'Projet 2'}, {name: 'Projet 3'}],
+  },
+  {
+    name: 'Programmes sectoriels',
+    children: [{name: 'Projet 1'}, {name: 'Projet 2'}, {name: 'Projet 3'}],
+  },
 ];
 
 /** Flat node with expandable and level information */
