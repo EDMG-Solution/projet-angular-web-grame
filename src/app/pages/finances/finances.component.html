@@ -526,178 +526,161 @@
     </mat-tab>
     <mat-tab label="Projets phares">
 
-      <table class="mdl-data-table mdl-js-data-table table-issulog">
-        <thead>
-          <tr class="head-table">
-            <th class="mdl-data-table__cell--non-numeric">Projet/Reform</th>
-            <th class="mdl-data-table__cell--non-numeric">Comp/Axe</th>
-           
-            <th class="mdl-data-table__cell--non-numeric">Libellé</th>
-            <th class="mdl-data-table__cell--non-numeric">Date derniere</th>
-            <th class="mdl-data-table__cell--non-numeric">Nombre de fois</th>
-            <th class="mdl-data-table__cell--non-numeric"> Date ident.</th>
-            <th class="mdl-data-table__cell--non-numeric"> 	
-              Nature</th>
-            <th class="mdl-data-table__cell--non-numeric"> Etat</th>
-            <th class="mdl-data-table__cell--non-numeric"> Priorité</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
+      
+      <div>
        
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-
+      </div>
+      
+      <div>
+      
+        <mat-button-toggle-group multiple [value]="['header-1']"
+                                 #stickyHeaders="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
+          <mat-button-toggle value="header-1" class="button-to-hide">  </mat-button-toggle>
+          
+        </mat-button-toggle-group>
+      </div>
+      
+      <div>
+   
+        <mat-button-toggle-group multiple [value]="['footer-1']"
+                                 #stickyFooters="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
          
+        </mat-button-toggle-group>
+      </div>
+      
+      <div>
+       
+        <mat-button-toggle-group multiple [value]="['position', 'symbol']"
+                                 #stickyColumns="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
+         
+        </mat-button-toggle-group>
+      </div>
+      
+      <div class="example-container mat-elevation-z8">
+        <mat-table [dataSource]="dataSource" *ngFor="let table of tables">
+          <ng-container matColumnDef="position" [sticky]="isSticky(stickyColumns, 'position')">
+            <mat-header-cell *matHeaderCellDef> Position </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Position Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="name" [sticky]="isSticky(stickyColumns, 'name')">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Name Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="weight" [stickyEnd]="isSticky(stickyColumns, 'weight')">
+            <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Weight Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="symbol" [stickyEnd]="isSticky(stickyColumns, 'symbol')">
+            <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Symbol Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="filler">
+            <mat-header-cell *matHeaderCellDef> Filler header cell </mat-header-cell>
+            <mat-cell *matCellDef="let element"> Filler data cell </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Filler footer cell </mat-footer-cell>
+          </ng-container>
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: isSticky(stickyHeaders, 'header-1')"></mat-header-row>
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: isSticky(stickyHeaders, 'header-2')"></mat-header-row>
+      
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      
+          <mat-footer-row *matFooterRowDef="displayedColumns; sticky: isSticky(stickyFooters, 'footer-1')"></mat-footer-row>
+          <mat-footer-row *matFooterRowDef="displayedColumns; sticky: isSticky(stickyFooters, 'footer-2')"></mat-footer-row>
+        </mat-table>
+      </div>
+      
 
 
-        </tbody>
-      </table>
 
     </mat-tab>
     <mat-tab label="Réformes phares">
 
-      <table class="mdl-data-table mdl-js-data-table table-issulog">
-        <thead>
-          <tr class="head-table">
-            <th class="mdl-data-table__cell--non-numeric">Projet/Reform</th>
-            <th class="mdl-data-table__cell--non-numeric">Comp/Axe</th>
-           
-            <th class="mdl-data-table__cell--non-numeric">Libellé</th>
-            <th class="mdl-data-table__cell--non-numeric">Date derniere</th>
-            <th class="mdl-data-table__cell--non-numeric">Nombre de fois</th>
-            <th class="mdl-data-table__cell--non-numeric"> Date ident.</th>
-            <th class="mdl-data-table__cell--non-numeric"> 	
-              Nature</th>
-            <th class="mdl-data-table__cell--non-numeric"> Etat</th>
-            <th class="mdl-data-table__cell--non-numeric"> Priorité</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
+      <div>
        
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Plan de Relan...</td>
-            <td class="mdl-data-table__cell--non-numeric">Centrale élec...</td>
-            <td class="mdl-data-table__cell--non-numeric">Sécurisation de l'assiette foncière de la DGPU</td>
-            <td class="mdl-data-table__cell--non-numeric">06/04/2022</td>
-            <td class="mdl-data-table__cell--non-numeric">0</td>
-            <td class="mdl-data-table__cell--non-numeric">01/10/2014</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier</td>
-            <td class="mdl-data-table__cell--non-numeric">Foncier En attente de validation</td>
-            <td class="mdl-data-table__cell--non-numeric">Haute</td>
-       
-          </tr>
-
+      </div>
+      
+      <div>
+      
+        <mat-button-toggle-group multiple [value]="['header-1']"
+                                 #stickyHeaders="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
+          <mat-button-toggle value="header-1" class="button-to-hide">  </mat-button-toggle>
+          
+        </mat-button-toggle-group>
+      </div>
+      
+      <div>
+   
+        <mat-button-toggle-group multiple [value]="['footer-1']"
+                                 #stickyFooters="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
          
-
-
-        </tbody>
-      </table>
+        </mat-button-toggle-group>
+      </div>
+      
+      <div>
+       
+        <mat-button-toggle-group multiple [value]="['position', 'symbol']"
+                                 #stickyColumns="matButtonToggleGroup"
+                                 class="example-sticky-toggle-group">
+         
+        </mat-button-toggle-group>
+      </div>
+      
+      <div class="example-container mat-elevation-z8">
+        <mat-table [dataSource]="dataSource" *ngFor="let table of tables">
+          <ng-container matColumnDef="position" [sticky]="isSticky(stickyColumns, 'position')">
+            <mat-header-cell *matHeaderCellDef> Position </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Position Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="name" [sticky]="isSticky(stickyColumns, 'name')">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Name Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="weight" [stickyEnd]="isSticky(stickyColumns, 'weight')">
+            <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Weight Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="symbol" [stickyEnd]="isSticky(stickyColumns, 'symbol')">
+            <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Symbol Footer </mat-footer-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="filler">
+            <mat-header-cell *matHeaderCellDef> Filler header cell </mat-header-cell>
+            <mat-cell *matCellDef="let element"> Filler data cell </mat-cell>
+            <mat-footer-cell *matFooterCellDef> Filler footer cell </mat-footer-cell>
+          </ng-container>
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: isSticky(stickyHeaders, 'header-1')"></mat-header-row>
+          <mat-header-row *matHeaderRowDef="displayedColumns; sticky: isSticky(stickyHeaders, 'header-2')"></mat-header-row>
+      
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      
+          <mat-footer-row *matFooterRowDef="displayedColumns; sticky: isSticky(stickyFooters, 'footer-1')"></mat-footer-row>
+          <mat-footer-row *matFooterRowDef="displayedColumns; sticky: isSticky(stickyFooters, 'footer-2')"></mat-footer-row>
+        </mat-table>
+      </div>
+      
 
     </mat-tab>
   </mat-tab-group>
