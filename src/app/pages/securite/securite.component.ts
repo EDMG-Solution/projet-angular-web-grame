@@ -42,3 +42,7 @@ export class TableBasicExample {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }
+
+export class DemoSearchBar {
+  search : String ="";
+  }

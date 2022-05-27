@@ -18,14 +18,13 @@ import {MatListModule} from '@angular/material/list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTreeModule} from '@angular/material/tree';
-
-
-
-
 
 
 import { AppComponent } from './app.component';
@@ -55,8 +54,6 @@ import {MatTableModule} from '@angular/material/table';
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +73,7 @@ import {MatTableModule} from '@angular/material/table';
   ],
   imports: [
     BrowserModule,
+    MatPaginatorModule,
     MatToolbarModule,
     MatTreeModule,
     MatButtonToggleModule,
@@ -111,10 +109,6 @@ import {MatTableModule} from '@angular/material/table';
     MatDialogModule,
     MatCommonModule,
     MatBadgeModule,
-    
-  
-    
-
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}
@@ -122,3 +116,5 @@ import {MatTableModule} from '@angular/material/table';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
