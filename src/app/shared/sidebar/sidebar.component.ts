@@ -10,6 +10,7 @@ export class SidebarComponent {
   public routes: typeof routes = routes;
   public isOpenUiElements = false;
 
+  panelOpenState = false;
   public openUiElements() {
     this.isOpenUiElements = !this.isOpenUiElements;
   }

@@ -1,53 +1,184 @@
 <mat-list>
- 
-  <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
-    <mat-icon>bar_chart</mat-icon> Tableau de Bord
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.AVANCEMENT}}" routerLinkActive="active">
-    <mat-icon>library_books</mat-icon> Avancement détaillé
-  </mat-list-item>
+  <!-- <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-icon>bar_chart</mat-icon> Menu Principal
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon> Tableau de Bord
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon> FICHE DE SYNTHESE
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion> -->
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>account_balance</mat-icon> TABLEAU DE BORD
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>category</mat-icon> Tableau de Bord
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon> FICHE DE SYNTHESE
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>bar_chart</mat-icon> AVANCEMENT DETAILLEE
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.AVANCEMENT}}" routerLinkActive="active">
+        <mat-icon>brightness_5</mat-icon> CONFIGURATION
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>more_vert</mat-icon> PROJET / REFORMES
+      </mat-list-item>
+      <!-- <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon> INITIATIVE PR
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.DASHBOARD}}" routerLinkActive="active">
+        <mat-icon>bar_chart</mat-icon> PROGRAMME SECT
+      </mat-list-item> -->
+    </mat-expansion-panel>
+  </mat-accordion>
+
   <mat-list-item routerLink="{{routes.ISSUE_LOG}}" routerLinkActive="active">
-    <mat-icon>fast_rewind</mat-icon> Issue Log
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.FINANCES}}" routerLinkActive="active">
-    <mat-icon>money</mat-icon> Finances
+    <mat-icon>fast_rewind</mat-icon> ISSUE LOG
   </mat-list-item>
 
-<mat-list-item routerLink="{{routes.MEDIATHEQUE}}" routerLinkActive="active">
-    <mat-icon>notifications</mat-icon> Mediathèque
-  </mat-list-item>
-  <!--
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>attach_money</mat-icon> FINANCE
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.FINANCES}}" routerLinkActive="active">
+        <mat-icon>money</mat-icon> Suivi financier
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.FINANCES}}" routerLinkActive="active">
+        <mat-icon>money</mat-icon> TBD FINANCIER
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
 
- 
-  <mat-list-item routerLink="{{routes.STATISTIQUE}}" routerLinkActive="active">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>airplay</mat-icon> MEDIATHEQUE
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.MEDIATHEQUE}}" routerLinkActive="active">
+        <mat-icon>attachment</mat-icon> RAPPORTS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.MEDIATHEQUE}}" routerLinkActive="active">
+        <mat-icon>filter</mat-icon> PHOTOS ET VIDEO
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <!--<mat-list-item routerLink="{{routes.STATISTIQUE}}" routerLinkActive="active">
     <mat-icon>show_chart</mat-icon> Statistique
-  </mat-list-item>  
-
-   -->
+  </mat-list-item>-->
   
-  <mat-list-item routerLink="{{routes.GESTION_ALERTES}}" routerLinkActive="active">
-    <mat-icon>home</mat-icon> Gestion des alertes
-  </mat-list-item>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>access_alarm</mat-icon> GESTION DES ALERTES
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.GESTION_ALERTES}}" routerLinkActive="active">
+        <mat-icon>settings</mat-icon> CONFIGURATION
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.GESTION_ALERTES}}" routerLinkActive="active">
+        <mat-icon>report_problem</mat-icon> ALERTES
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
 
   <mat-list-item routerLink="{{routes.MESSAGERIES}}" routerLinkActive="active">
-    <mat-icon>message</mat-icon> Messagerie
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
-    <mat-icon>view_agenda</mat-icon> Référentiel
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.SECURITE}}" routerLinkActive="active">
-    <mat-icon>vpn_key</mat-icon> Securité
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.PARAMETRAGES}}" routerLinkActive="active">
-    <mat-icon>settings</mat-icon> Parametrage
+    <mat-icon>message</mat-icon> MESSAGERIE
   </mat-list-item>
 
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>all_inclusive</mat-icon> REFERENTIEL
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>layers</mat-icon> ISSUE LOG
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>functions</mat-icon> INDICATEURS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>assignment</mat-icon> DOCUMENTS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>attach_money</mat-icon> BUDGETS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>label</mat-icon> COMPOSITIONS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>extension</mat-icon> AUTRES
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>accessibility</mat-icon> ACTEURS
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.REFERENTIEL}}" routerLinkActive="active">
+        <mat-icon>view_agenda</mat-icon> STRUCTURES
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>https</mat-icon> SECURISEE
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.SECURITE}}" routerLinkActive="active">
+        <mat-icon>person</mat-icon> Gestion des profils
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.SECURITE}}" routerLinkActive="active">
+        <mat-icon>how_to_reg</mat-icon> Gestion des utilisateurs
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.SECURITE}}" routerLinkActive="active">
+        <mat-icon>vpn_key</mat-icon> Logs
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>build</mat-icon> PARAMETRAGES
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.PARAMETRAGES}}" routerLinkActive="active">
+        <mat-icon>event</mat-icon> LIMITE DATE SAISIE
+      </mat-list-item>
+      <mat-list-item routerLink="{{routes.PARAMETRAGES}}" routerLinkActive="active">
+        <mat-icon>error</mat-icon> LIMITE REMONTE PROBLEME
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion>
+
   
-  <!--
-  <mat-list-item routerLink="{{routes.GESTION_CHATING}}" routerLinkActive="active">
-    <mat-icon>message</mat-icon> Gestion chatting
-  </mat-list-item>
-  <mat-list-item routerLink="{{routes.TYPOGRAPHY}}" routerLinkActive="active">
+  
+  
+
+  <!-- <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>cached</mat-icon> GESTION CHATING
+      </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.GESTION_CHATING}}" routerLinkActive="active">
+        <mat-icon>message</mat-icon> CHATING
+      </mat-list-item>
+    </mat-expansion-panel>
+  </mat-accordion> -->
+  <!--<mat-list-item routerLink="{{routes.TYPOGRAPHY}}" routerLinkActive="active">
     <mat-icon>text_fields</mat-icon> Typography
   </mat-list-item>
   <mat-list-item routerLink="{{routes.TABLES}}" routerLinkActive="active">
