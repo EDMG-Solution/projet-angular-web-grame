@@ -15,6 +15,24 @@ import { ReferentielComponent } from './pages/referentiel/referentiel.component'
 import { SecuriteComponent } from './pages/securite/securite.component';
 import { StatistiquesComponent } from './pages/statistiques/statistiques.component';
 import { Popup1Component } from './pages/popup1/popup1.component';
+import { FicheDeSyntheseComponent } from './pages/fiche-de-synthese/fiche-de-synthese.component';
+import { ProjetReformeComponent } from './pages/projet-reforme/projet-reforme.component';
+import { SuiviFinancierComponent } from './pages/suivi-financier/suivi-financier.component';
+import { TdbFinancierComponent } from './pages/tdb-financier/tdb-financier.component';
+import { RapportsComponent } from './pages/rapports/rapports.component';
+import { PhotosVideosComponent } from './pages/photos-videos/photos-videos.component';
+import { AlertesComponent } from './pages/alertes/alertes.component';
+import { IndicateursComponent } from './pages/indicateurs/indicateurs.component';
+import { DocumentsComponent } from './pages/documents/documents.component';
+import { BudgetsComponent } from './pages/budgets/budgets.component';
+import { CompositionsComponent } from './pages/compositions/compositions.component';
+import { AutresComponent } from './pages/autres/autres.component';
+import { ActeursComponent } from './pages/acteurs/acteurs.component';
+import { StructuresComponent } from './pages/structures/structures.component';
+import { GestionDesUtilisateursComponent } from './pages/gestion-des-utilisateurs/gestion-des-utilisateurs.component';
+import { LogsComponent } from './pages/logs/logs.component';
+import { LimiteDateSaisieComponent } from './pages/limite-date-saisie/limite-date-saisie.component';
+import { LimiteRemonteProblemeComponent } from './pages/limite-remonte-probleme/limite-remonte-probleme.component';
 
 const routes: Routes = [
   {
@@ -96,6 +114,108 @@ const routes: Routes = [
     pathMatch: 'full',
     canActivate: [AuthGuard],
     component: DashboardPageComponent
+  },
+  {
+    path: 'synthese',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: FicheDeSyntheseComponent
+  },
+  {
+    path: 'reforme',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: ProjetReformeComponent
+  },
+  {
+    path: 'suivi',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: SuiviFinancierComponent  
+  },
+  {
+    path: 'tdb-financier',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: TdbFinancierComponent  
+  },
+  {
+    path: 'rapports',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: RapportsComponent  
+  },
+  {
+    path: 'photosvideos',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: PhotosVideosComponent  
+  },
+  {
+    path: 'alerte',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: AlertesComponent  
+  },
+  {
+    path: 'indicateurs',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: IndicateursComponent  
+  },
+  {
+    path: 'documents',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: DocumentsComponent  
+  },
+  {
+    path: 'budget',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: BudgetsComponent  
+  },
+  {
+    path: 'composition',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: CompositionsComponent  
+  },
+  {
+    path: 'autre',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: AutresComponent  
+  },
+  {
+    path: 'acteur',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: ActeursComponent  
+  },
+  {
+    path: 'structure',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: StructuresComponent  
+  },
+  {
+    path: 'gestionUsers',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: GestionDesUtilisateursComponent  
+  },
+  {
+    path: 'logs',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: LogsComponent  
+  },
+  {
+    path: 'limiteRemonte',
+    pathMatch: 'full',
+    canActivate: [AuthGuard],
+    component: LimiteRemonteProblemeComponent  
   },
   {
     path: 'typography',
