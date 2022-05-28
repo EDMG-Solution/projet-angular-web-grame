@@ -70,7 +70,7 @@ import {MatTableModule} from '@angular/material/table';
     SecuriteComponent,
     ParametrageComponent,
     GestionChatingComponent,
-    Popup1Component,
+    Popup1Component
   ],
   imports: [
     BrowserModule,
