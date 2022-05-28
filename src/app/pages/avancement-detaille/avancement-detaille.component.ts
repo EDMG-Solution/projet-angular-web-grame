@@ -1,6 +1,6 @@
 import { FlatTreeControl } from '@angular/cdk/tree';
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 
 
@@ -96,9 +96,13 @@ export class AvancementDetailleComponent implements OnInit {
 
 
 @Component({
- 
+  selector: '../popup1/popup1.component',
   templateUrl: '../popup1/popup1.component.html',
 })
-export class  Popup1Component { }
+export class  Popup1Component { 
+
+
+
+}
 
 

@@ -71,6 +71,10 @@ import {MatTableModule} from '@angular/material/table';
     ParametrageComponent,
     GestionChatingComponent,
     Popup1Component,
+   
+  ],
+  entryComponents:[
+    Popup1Component,
   ],
   imports: [
     BrowserModule,
