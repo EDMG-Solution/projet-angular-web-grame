@@ -239,7 +239,7 @@ button.mat-fab .mat-button-wrapper {
 mat-toolbar.page-header {
   display: flex;
   justify-content: space-between;
-  padding: 50px 24px 16px 24px;
+  padding: 15px 24px 15px 24px;
   background: none;
   height: auto;
 
@@ -463,4 +463,64 @@ display: flex;
 
 button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent {
   margin: 0px 10px;
+}
+
+
+span.mat-expansion-indicator {
+  display: none;
+}
+
+.section-text-dash{
+display: flex;
+}
+
+.section-text-dash {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #526dfe;
+  margin: 10px 20px;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.text-ministere{
+  color: #526dfe;
+}
+
+.text-presidence{
+text-align: inherit;
+}
+
+h6.text-presidence {
+  text-align: initial;
+}
+
+h6.text-presidence {
+  background: #536efe;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 25px;
+}
+
+
+.example-accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #526dfe !important;
+  color: white !important;
+}
+
+
+.example-accordion-item-description {
+
+  font-size: 0.85em;
+  color: #fafafa;
+}
+
+
+.mat-tab-label:hover {
+  background: #536efe;
+  color: white;
 }
