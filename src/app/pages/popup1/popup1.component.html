@@ -1,38 +1,114 @@
-<form action="#">
+<form class="formulaire-add-new-configuration" action="#">
+  <div class="detaille">
+    <h5>
+     Détails
+    </h5>
+
     <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Type</label>  <br><br>
+      <input class="mdl-textfield__input" type="text" id="sample1" placeholder="Réforme phare" value="Réforme phare">
+      
+    </div> 
+    <br>
+    
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Libellé <span class="color-red"> *</span></label> <br><br>
+      <input class="mdl-textfield__input" type="text" id="sample1" placeholder="Libellé" >
+      
+    </div>
+    <br>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample5">Description <span class="color-red"> *</span></label><br><br>
+      <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+     
+    </div>
+    <br>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Date début prévue</label> <br><br>
       <input class="mdl-textfield__input" type="date" id="sample1">
-      <label class="mdl-textfield__label" for="sample1">Text...</label>
     </div>
     <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div> <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="date" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-    <!-- Accent-colored raised button with ripple -->
-    <!-- Colored raised button -->
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-    Button
-  </button>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-    Button
-  </button>
+      <label class="mdl-textfield__label" for="sample1">Date fin prévue</label> <br><br>
+      <input class="mdl-textfield__input" type="date" id="sample1">
+    </div>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Date début réelle</label> <br><br>
+      <input class="mdl-textfield__input" type="date" id="sample1">
+    </div>
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Date fin réelle</label> <br><br>
+      <input class="mdl-textfield__input" type="date" id="sample1">
+    </div>
+
+  </div>
+  
+  <div class="realisations">
+
+    <h5> Réalisations</h5>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Realisation cible</label>  <br><br>
+      <input class="mdl-textfield__input" type="text" id="sample1" placeholder="Realisation cible">
+      
+    </div>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Realisation cible</label>
+      <br><br>
+      <select name="cars" id="cars">
+        <option value="Capital humain">Capital humain</option>
+        <option value="Economie numérique">Economie numérique</option>
+        <option value="Environnement des affaires et régulation">Environnement des affaires et régulation</option>
+        <option value="Financement de l’économie">Financement de l’économie</option>
+      </select>
+    </div>
+    
+      
+
+<br>
+<br>
+    <h5> Classification </h5>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Catalyseur</label> <br><br>
+      <select name="cars" id="cars">
+        <option value="Capital humain">Capital humain</option>
+        <option value="Economie numérique">Economie numérique</option>
+        <option value="Environnement des affaires et régulation">Environnement des affaires et régulation</option>
+        <option value="Financement de l’économie">Financement de l’économie</option>
+      </select>
+    </div>
+
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label" for="sample1">Axe stratégique</label> <br><br>
+      <select name="cars" id="cars">
+        <option value="Capital humain">Capital humain</option>
+        <option value="Economie numérique">Economie numérique</option>
+        <option value="Environnement des affaires et régulation">Environnement des affaires et régulation</option>
+        <option value="Financement de l’économie">Financement de l’économie</option>
+      </select>
+    </div>
+    
+      
+
+<br>
+<br>
+   <div class="section-deux-button">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Valider
+      </button> 
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Annuller
+      </button>
+   </div>      
+
+
+  </div>
+
+   
+
   
   </form>
