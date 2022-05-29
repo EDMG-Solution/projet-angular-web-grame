@@ -1,73 +1,65 @@
 <app-layout>
-
-
-
   <mat-toolbar class="page-header" role="heading">
     <h1>Parametrage</h1>
-</mat-toolbar>
+  </mat-toolbar>
 
   <mat-card class="icons-wrapper">
-    <mat-tab-group>
-      <mat-tab label="Limite date de saisie">
-        <div class="icons-content">
-          <div class="page-content__items-wrapper">
+    <div class="icons-content">
+      <div class="page-content__items-wrapper">
+        <!-- Card 2 -->
+        <mat-card class="page-content__item">
+          <mat-card-title> </mat-card-title>
 
-           
-            <!-- Card 2 -->
-            <mat-card class="page-content__item">
-              <mat-card-title>
-                
-              </mat-card-title>
+          <mat-card-title> </mat-card-title>
 
-              <mat-card-title>
-                
-              </mat-card-title>
-             
+          <mat-card-content>
+            <section class="">
+              <mat-checkbox>Appliquer le verrou CDD</mat-checkbox>
+            </section>
 
-              <mat-card-content>
+            <section class="">
+              <h6>Configuration CDD</h6>
+            </section>
 
-                <section class="">
-                  <mat-checkbox >Appliquer le verrou CDD</mat-checkbox>
-                </section>
+            <section class="example-section">
+              <div class="example-container">
+                <mat-form-field appearance="fill">
+                  <mat-label>Select me</mat-label>
+                  <mat-select>
+                    <mat-option aria-selected="true" value="option"
+                      >1</mat-option
+                    >
+                    <mat-option value="option">2</mat-option>
+                    <mat-option value="option">3</mat-option>
+                    <mat-option value="option">4</mat-option>
+                    <mat-option value="option">5</mat-option>
+                    <mat-option value="option">6</mat-option>
+                    <mat-option value="option">7</mat-option>
+                    <mat-option value="option">8</mat-option>
+                    <mat-option value="option">9</mat-option>
+                    <mat-option value="option">10</mat-option>
+                    <mat-option value="option">11</mat-option>
+                  </mat-select>
+                  <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+                </mat-form-field>
 
-                <section class="">
-                  <h6>Configuration CDD</h6>
-                </section>
-
-                <section class="example-section ">
-                  <div class="example-container">
-
-                    <mat-form-field appearance="fill">
-                      <mat-label>Select me</mat-label>
-                      <mat-select>
-                        <mat-option aria-selected="true" value="option">1</mat-option>
-                        <mat-option value="option">2</mat-option>
-                        <mat-option value="option">3</mat-option>
-                        <mat-option value="option">4</mat-option>
-                        <mat-option value="option">5</mat-option>
-                        <mat-option value="option">6</mat-option>
-                        <mat-option value="option">7</mat-option>
-                        <mat-option value="option">8</mat-option>
-                        <mat-option value="option">9</mat-option>
-                        <mat-option value="option">10</mat-option>
-                        <mat-option value="option">11</mat-option>
-                      </mat-select>
-                      <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
-                    </mat-form-field>
-
-                    <mat-form-field hintLabel="Max 10 characters" appearance="fill">
-                      <mat-label>Enter some input</mat-label>
-                      <input matInput #input maxlength="10" placeholder="Ex. Nougat">
-                      <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
-                    </mat-form-field>
-                  
-                  </div>
-                </section>
-              </mat-card-content>
-            </mat-card>    
-          </div>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
+                <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+                  <mat-label>Enter some input</mat-label>
+                  <input
+                    matInput
+                    #input
+                    maxlength="10"
+                    placeholder="Ex. Nougat"
+                  />
+                  <mat-hint align="end"
+                    >{{ input.value?.length || 0 }}/10</mat-hint
+                  >
+                </mat-form-field>
+              </div>
+            </section>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
   </mat-card>
 </app-layout>

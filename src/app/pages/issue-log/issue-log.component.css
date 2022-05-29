@@ -1,0 +1,10 @@
+table.mdl-data-table.mdl-js-data-table.table-issulog {
+  width: 100%;
+  text-align: left;
+}
+
+.head-table{
+  background: #526dfe;
+  color: white;
+
+}

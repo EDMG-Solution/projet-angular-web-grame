@@ -22,6 +22,7 @@ export enum routes {
   GESTION_CHATING ='/gestion-chating',
   GESTION_ALERTES ='/gestiondesalertes',
   ISSUE_LOG ='/ui/charts',
+  ISSUE_LOG1='/issue-log',
   MEDIATHEQUE ='/mediatheque',
   MESSAGERIES ='/messageries',
   PARAMETRAGES ='/parametrage',
