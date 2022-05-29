@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FlatTreeControl } from '@angular/cdk/tree';
-import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
+import { Component } from '@angular/core';
 import { MatButtonToggleGroup } from '@angular/material/button-toggle';
+import { MatTreeFlattener } from '@angular/material/tree';
 
 
 /**
@@ -46,14 +45,15 @@ export class TdbFinancierComponent {
   tables = [0];
 
   constructor() {
-    this.displayedColumns.length = 24;
+    this.displayedColumns.length = 5;
     this.displayedColumns.fill('filler');
 
     // The first two columns should be position and name; the last two columns: weight, symbol
-    this.displayedColumns[0] = 'position';
-    this.displayedColumns[1] = 'name';
-    this.displayedColumns[22] = 'weight';
-    this.displayedColumns[23] = 'symbol';
+    this.displayedColumns[0] = 'projet';
+    this.displayedColumns[1] = 'composante';
+    this.displayedColumns[2] = 'indicatif';
+    this.displayedColumns[3] = 'global';
+    this.displayedColumns[4] = 'type';
 
   //  this.dataSource.data = TREE_DATA;
   }
@@ -105,21 +105,22 @@ export class TdbFinancierComponent {
 
 
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  composante: string;
+  projet: number;
+  indicatif: number;
+  global: string;
+  type: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Projet1', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Projet2', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Projet3', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Projet4', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Projet5', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Projet6', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Projet7', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Projet8', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Projet9', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Projet10', weight: 20.1797, symbol: 'Ne'},
+  {projet: 1, composante: 'Projet1', indicatif: 1.0079, global: 'H',type:'Public'},
+  {projet: 2, composante: 'Projet2', indicatif: 4.0026, global: 'He',type:'Public'},
+  {projet: 3, composante: 'Projet3', indicatif: 6.941, global: 'Li',type:'Public'},
+  {projet: 4, composante: 'Projet4', indicatif: 9.0122, global: 'Be',type:'Public'},
+  {projet: 5, composante: 'Projet5', indicatif: 10.811, global: 'B',type:'Public'},
+  {projet: 6, composante: 'Projet6', indicatif: 12.0107, global: 'C',type:'Public'},
+  {projet: 7, composante: 'Projet7', indicatif: 14.0067, global: 'N',type:'Public'},
+  {projet: 8, composante: 'Projet8', indicatif: 15.9994, global: 'O',type:'Public'},
+  {projet: 9, composante: 'Projet9', indicatif: 18.9984, global: 'F',type:'Public'},
+  {projet: 10, composante: 'Projet10', indicatif: 20.1797, global: 'Ne',type:'Public'},
 ];
