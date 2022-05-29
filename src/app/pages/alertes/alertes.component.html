@@ -1,1 +1,37 @@
-<p>alertes works!</p>
+<app-layout>
+    
+  <mat-toolbar class="page-header" role="heading">
+      <h1>Gestion des alertes</h1>
+  </mat-toolbar>
+
+    <mat-card class="icons-wrapper">
+      <mat-tab-group backgroundColor="primary" >
+        <mat-tab label="Alertes">
+          <div class="icons-content">
+          
+            <div class="page-content__items-wrapper">
+
+              <!-- Card 1 -->
+              <mat-card class="page-content__item">
+                <mat-card-title>
+                  <p>Priorité</p>
+                </mat-card-title>
+                <mat-card-content>
+                  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                      <mat-button-toggle value="critique">Critique</mat-button-toggle>
+                      <mat-button-toggle value="moyenne">Moyenne</mat-button-toggle>
+                      <mat-button-toggle value="basse">Basse</mat-button-toggle>
+                      <mat-button-toggle value="recharger">Recharger</mat-button-toggle>
+                    </mat-button-toggle-group>
+                </mat-card-content>
+              </mat-card>
+      
+            </div>
+
+          </div>
+        </mat-tab>
+  
+      </mat-tab-group>
+    </mat-card>
+  
+</app-layout>

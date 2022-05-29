@@ -52,6 +52,24 @@ import { Popup1Component } from './pages/popup1/popup1.component';
 import { MatCommonModule } from '@angular/material/core';
 import { MatBadgeModule } from '@angular/material/badge';
 import {MatTableModule} from '@angular/material/table';
+import { FicheDeSyntheseComponent } from './pages/fiche-de-synthese/fiche-de-synthese.component';
+import { ProjetReformeComponent } from './pages/projet-reforme/projet-reforme.component';
+import { ProgrammeSectComponent } from './pages/programme-sect/programme-sect.component';
+import { TdbFinancierComponent } from './pages/tdb-financier/tdb-financier.component';
+import { SuiviFinancierComponent } from './pages/suivi-financier/suivi-financier.component';
+import { PhotosVideosComponent } from './pages/photos-videos/photos-videos.component';
+import { AlertesComponent } from './pages/alertes/alertes.component';
+import { IndicateursComponent } from './pages/indicateurs/indicateurs.component';
+import { DocumentsComponent } from './pages/documents/documents.component';
+import { BudgetsComponent } from './pages/budgets/budgets.component';
+import { CompositionsComponent } from './pages/compositions/compositions.component';
+import { AutresComponent } from './pages/autres/autres.component';
+import { ActeursComponent } from './pages/acteurs/acteurs.component';
+import { StructuresComponent } from './pages/structures/structures.component';
+import { GestionDesUtilisateursComponent } from './pages/gestion-des-utilisateurs/gestion-des-utilisateurs.component';
+import { LogsComponent } from './pages/logs/logs.component';
+import { LimiteRemonteProblemeComponent } from './pages/limite-remonte-probleme/limite-remonte-probleme.component';
+import { LimiteDateSaisieComponent } from './pages/limite-date-saisie/limite-date-saisie.component';
 
 
 
@@ -70,7 +88,33 @@ import {MatTableModule} from '@angular/material/table';
     SecuriteComponent,
     ParametrageComponent,
     GestionChatingComponent,
-    Popup1Component
+    Popup1Component,
+    FicheDeSyntheseComponent,
+    ProjetReformeComponent,
+    ProgrammeSectComponent,
+    Popup1Component,
+    TdbFinancierComponent,
+    SuiviFinancierComponent,
+    PhotosVideosComponent,
+    AlertesComponent,
+    IndicateursComponent,
+    DocumentsComponent,
+    BudgetsComponent,
+    CompositionsComponent,
+    AutresComponent,
+    ActeursComponent,
+    StructuresComponent,
+    GestiondesalertesComponent,
+    GestionDesUtilisateursComponent,
+    LogsComponent,
+    LimiteRemonteProblemeComponent,
+    LimiteDateSaisieComponent
+  
+
+   
+  ],
+  entryComponents:[
+    Popup1Component,
   ],
   imports: [
     BrowserModule,

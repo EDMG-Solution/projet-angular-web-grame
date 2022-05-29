@@ -13,3 +13,4 @@ export class AlertesComponent implements OnInit {
   }
 
 }
+export class ButtonToggleOverviewExample {}

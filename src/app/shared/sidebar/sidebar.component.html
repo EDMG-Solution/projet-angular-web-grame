@@ -1,5 +1,5 @@
 <mat-list>
-  <!-- <mat-accordion>
+  <!--      
     <mat-expansion-panel hideToggle>
       <mat-expansion-panel-header>
         <mat-icon>bar_chart</mat-icon> Menu Principal
@@ -11,10 +11,10 @@
         <mat-icon>bar_chart</mat-icon> FICHE DE SYNTHESE
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion> -->
+        -->
 
-  <mat-accordion>
-    <mat-expansion-panel >
+ 
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>account_balance</mat-icon> TABLEAU DE BORD
       </mat-expansion-panel-header>
@@ -25,9 +25,9 @@
         <mat-icon>bar_chart</mat-icon> FICHE DE SYNTHESE
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+    
 
-  <mat-accordion>
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>bar_chart</mat-icon> AVANCEMENT DETAILLEE
@@ -45,13 +45,22 @@
         <mat-icon>bar_chart</mat-icon> PROGRAMME SECT
       </mat-list-item> -->
     </mat-expansion-panel>
-  </mat-accordion>
+      
+    
 
-  <mat-list-item routerLink="{{routes.ISSUE_LOG}}" routerLinkActive="active">
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>fast_rewind</mat-icon> ISSUE LOG
+      </mat-expansion-panel-header>
+       <mat-list-item routerLink="{{routes.ISSUE_LOG}}" routerLinkActive="active">
     <mat-icon>fast_rewind</mat-icon> ISSUE LOG
   </mat-list-item>
+    </mat-expansion-panel>
 
-  <mat-accordion>
+
+
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>attach_money</mat-icon> FINANCE
@@ -63,9 +72,9 @@
         <mat-icon>money</mat-icon> TBD FINANCIER
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+       
 
-  <mat-accordion>
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>airplay</mat-icon> MEDIATHEQUE
@@ -77,13 +86,13 @@
         <mat-icon>filter</mat-icon> PHOTOS ET VIDEO
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+       
 
   <!--<mat-list-item routerLink="{{routes.STATISTIQUE}}" routerLinkActive="active">
     <mat-icon>show_chart</mat-icon> Statistique
   </mat-list-item>-->
   
-  <mat-accordion>
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>access_alarm</mat-icon> GESTION DES ALERTES
@@ -95,13 +104,19 @@
         <mat-icon>report_problem</mat-icon> ALERTES
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
 
-  <mat-list-item routerLink="{{routes.MESSAGERIES}}" routerLinkActive="active">
-    <mat-icon>message</mat-icon> MESSAGERIE
-  </mat-list-item>
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-icon>message</mat-icon> MESSAGERIE
+    </mat-expansion-panel-header>
+      <mat-list-item routerLink="{{routes.MESSAGERIES}}" routerLinkActive="active">
+        <mat-icon>message</mat-icon> MESSAGERIE
+      </mat-list-item>
+    </mat-expansion-panel>  
 
-  <mat-accordion>
+ 
+
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>all_inclusive</mat-icon> REFERENTIEL
@@ -131,9 +146,9 @@
         <mat-icon>view_agenda</mat-icon> STRUCTURES
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+       
 
-  <mat-accordion>
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>https</mat-icon> SECURISEE
@@ -148,9 +163,9 @@
         <mat-icon>vpn_key</mat-icon> Logs
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+       
 
-  <mat-accordion>
+       
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>build</mat-icon> PARAMETRAGES
@@ -162,13 +177,13 @@
         <mat-icon>error</mat-icon> LIMITE REMONTE PROBLEME
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion>
+       
 
   
   
   
 
-  <!-- <mat-accordion>
+  <!--      
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-icon>cached</mat-icon> GESTION CHATING
@@ -177,7 +192,7 @@
         <mat-icon>message</mat-icon> CHATING
       </mat-list-item>
     </mat-expansion-panel>
-  </mat-accordion> -->
+        -->
   <!--<mat-list-item routerLink="{{routes.TYPOGRAPHY}}" routerLinkActive="active">
     <mat-icon>text_fields</mat-icon> Typography
   </mat-list-item>

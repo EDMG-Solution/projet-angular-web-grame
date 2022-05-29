@@ -1,240 +1,191 @@
 <app-layout>
   <mat-toolbar class="page-header" role="heading">
     <h1>Tableau de Bord</h1>
-</mat-toolbar>
-<mat-card class="icons-wrapper">
-<mat-tab-group>
-  <mat-tab label="Tableau de bord ">
+  </mat-toolbar>
+  <mat-card class="icons-wrapper">
     <mat-tab-group>
-
-      <mat-tab class="tab-dasbord"  label="Tableau de bord">
-        <br>
-        <br>
-        <h5 class="performance-chart__header-title"> Tableau de suivi des performances des projets et reformes phares
-
-        </h5>
-      <br>
-      <br>
-      <div class="charts-wrapper">
-        <div class="chart">
-          <mat-card class="revenue-chart">
-            <mat-card-title class="revenue-chart__header">
-              <h5 class="revenue-chart__header-title">Synthèse</h5>
-            </mat-card-title>
-            <mat-card-content class="revenue-chart__content">
-              <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
-                <mat-chip *ngFor="let chip of availableColors" selected [color]="chip.color">
-                  {{chip.name}}
-                </mat-chip>
-              </mat-chip-list>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="chart">
-          <app-performance-chart [performanceChartData]="performanceChartData$ | async"></app-performance-chart>
-        </div>
-        <div class="chart">
-          <app-server-chart [serverChartData]="serverChartData$ | async"></app-server-chart>
-        </div>
-        <div class="chart">
-          <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
-        </div>
-      </div>
-      <br>
-      <br>
-      <h5>
-       
-        Etat d'avancement des projets et réformes phares au 16 mai 2022
-      </h5>
-      <br>
-      <br>
-      <cdk-accordion class="example-accordion">
-        <cdk-accordion-item
-          *ngFor="let item of items; let index = index;"
-          #accordionItem="cdkAccordionItem"
-          class="example-accordion-item"
-          role="button"
-          tabindex="0"
-          [attr.id]="'accordion-header-' + index"
-          [attr.aria-expanded]="accordionItem.expanded"
-          [attr.aria-controls]="'accordion-body-' + index">
-          <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
-            {{ item }}
-            <span class="example-accordion-item-description">
-              Cliquer pour {{ accordionItem.expanded ? 'Reduire' : 'Agrandir' }}
-            </span>
-          </div>
-          <div
-            class="example-accordion-item-body"
-            role="region"
-            [style.display]="accordionItem.expanded ? '' : 'none'"
-            [attr.id]="'accordion-body-' + index"
-            [attr.aria-labelledby]="'accordion-header-' + index">
-            Le Barrage de Sambangalou est un pilier du programme de mix énergétique et d’accès universel à l’électricité à moindre coût, avec 128 MW de capacité, une ligne d’interconnexion de 225 kV sur 1 677 Km, ainsi qu’un potentiel d’irrigation par le futur barrage de 90 000 ha de terres agricoles dont plus de la moitié au Sénégal. Il est urgent que l’Etat du Sénégal, après avoir été choisi par les 3 pays frères membres de l’OMVG comme unique interlocuteur auprès des places financières pour la mobilisation du financement y afférent, joue pleinement son rôle afin de réaliser ce projet qui est une composante majeure du projet phare Plan de Relance Intégré de l’Electricité. 
-          </div>
-        </cdk-accordion-item>
-      </cdk-accordion>
-      
-      </mat-tab>
-      <mat-tab class="tab-dasbord"  label="Livrées et en Exploitation">
-       <mat-tab-group>
-        <mat-tab class="tab-dasbord"  label="Batailles clés (Projets et prérequis)">
-          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-            <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
-              <th mat-header-cell *matHeaderCellDef>
-                {{column.header}}
-              </th>
-              <td mat-cell *matCellDef="let row">
-                {{column.cell(row)}}
-              </td>
-            </ng-container>
-          
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-          </table>
-         </mat-tab>
-         <mat-tab class="tab-dasbord"  label="Catalyseurs (Reformes et préalables)">
-          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
-            <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
-              <th mat-header-cell *matHeaderCellDef>
-                {{column.header}}
-              </th>
-              <td mat-cell *matCellDef="let row">
-                {{column.cell(row)}}
-              </td>
-            </ng-container>
-          
-            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-          </table>
-         </mat-tab>
-        
-       </mat-tab-group>
-      
-      
+      <mat-tab label="Tableau de bord ">
+        <mat-tab-group>
+          <mat-tab class="tab-dasbord"  label="Tableau de bord"><br><br>
+            <h5 class="performance-chart__header-title"> Tableau de suivi des performances des projets et reformes phares</h5><br><br>
+            <div class="charts-wrapper">
+              <div class="chart">
+                <mat-card class="revenue-chart">
+                  <mat-card-title class="revenue-chart__header">
+                    <h5 class="revenue-chart__header-title">Synthèse</h5>
+                  </mat-card-title>
+                  <mat-card-content class="revenue-chart__content">
+                    <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+                      <mat-chip *ngFor="let chip of availableColors" selected [color]="chip.color">
+                        {{chip.name}}
+                      </mat-chip>
+                    </mat-chip-list>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="chart">
+                <app-performance-chart [performanceChartData]="performanceChartData$ | async"></app-performance-chart>
+              </div>
+              <div class="chart">
+                <app-server-chart [serverChartData]="serverChartData$ | async"></app-server-chart>
+              </div>
+              <div class="chart">
+                <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
+              </div>
+            </div><br><br>
+            <h5>Etat d'avancement des projets et réformes phares au 16 mai 2022</h5><br><br>
+            <cdk-accordion class="example-accordion">
+              <cdk-accordion-item
+                *ngFor="let item of items; let index = index;"
+                #accordionItem="cdkAccordionItem"
+                class="example-accordion-item"
+                role="button"
+                tabindex="0"
+                [attr.id]="'accordion-header-' + index"
+                [attr.aria-expanded]="accordionItem.expanded"
+                [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                    {{ item }}
+                  <span class="example-accordion-item-description">
+                    Cliquer pour {{ accordionItem.expanded ? 'Reduire' : 'Agrandir' }}
+                  </span>
+                </div>
+                <div
+                  class="example-accordion-item-body"
+                  role="region"
+                  [style.display]="accordionItem.expanded ? '' : 'none'"
+                  [attr.id]="'accordion-body-' + index"
+                  [attr.aria-labelledby]="'accordion-header-' + index">
+                  Le Barrage de Sambangalou est un pilier du programme de mix énergétique et d’accès universel à l’électricité à moindre coût, avec 128 MW de capacité, une ligne d’interconnexion de 225 kV sur 1 677 Km, ainsi qu’un potentiel d’irrigation par le futur barrage de 90 000 ha de terres agricoles dont plus de la moitié au Sénégal. Il est urgent que l’Etat du Sénégal, après avoir été choisi par les 3 pays frères membres de l’OMVG comme unique interlocuteur auprès des places financières pour la mobilisation du financement y afférent, joue pleinement son rôle afin de réaliser ce projet qui est une composante majeure du projet phare Plan de Relance Intégré de l’Electricité. 
+                </div>
+              </cdk-accordion-item>
+            </cdk-accordion>
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="Livrées et en Exploitation">
+            <mat-tab-group>
+              <mat-tab class="tab-dasbord"  label="Batailles clés (Projets et prérequis)">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+                  <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
+                    <th mat-header-cell *matHeaderCellDef>
+                      {{column.header}}
+                    </th>
+                    <td mat-cell *matCellDef="let row">
+                      {{column.cell(row)}}
+                    </td>
+                  </ng-container>
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+              </mat-tab>
+            <mat-tab class="tab-dasbord"  label="Catalyseurs (Reformes et préalables)">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+              <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
+                <th mat-header-cell *matHeaderCellDef>
+                  {{column.header}}
+                </th>
+                <td mat-cell *matCellDef="let row">
+                  {{column.cell(row)}}
+                </td>
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          </mat-tab>
+        </mat-tab-group>      
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Cartographie des composantes">
-        <h5 class="revenue-chart__header-title">  </h5>
-      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
-
+        <h5 class="revenue-chart__header-title"></h5>
+        <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Cartographie des finances">
         <h5 class="revenue-chart__header-title">  </h5>
-      <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
-
+        <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Documentation ">
         <h5 class="revenue-chart__header-title">   </h5>
         <mat-tab-group>
-         <mat-tab  class="tab-dasbord"  label="2022">
-           2022
-         </mat-tab>
-
-         <mat-tab class="tab-dasbord"  label="2021">
-          2021
+          <mat-tab  class="tab-dasbord"  label="2022">
+            2022
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="2021">
+           2021
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="2020">
+            2020
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="2019">
+            2019
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="2018">
+            2018
+          </mat-tab>
+          <mat-tab class="tab-dasbord"  label="2017">
+            2017
+          </mat-tab>
+          </mat-tab-group>
         </mat-tab>
-        <mat-tab class="tab-dasbord"  label="2020">
-          2020
-        </mat-tab>
-        <mat-tab class="tab-dasbord"  label="2019">
-          2019
-        </mat-tab>
-        <mat-tab class="tab-dasbord"  label="2018">
-          2018
-        </mat-tab>
-        <mat-tab class="tab-dasbord"  label="2017">
-          2017
-        </mat-tab>
-        </mat-tab-group>
-
-      </mat-tab>
-      <mat-tab class="tab-dasbord"  label="Rapports">
-        <h5 class="revenue-chart__header-title">   </h5>
-
-
-        <div class="formulaire-des-rapports">
-          <section class="section-form1"> <form class="example-form">
-            <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Projets</mat-label>
-              <input type="text"
-                     placeholder="selectionner un projet"
-                     aria-label="Number"
-                     matInput
-                     [formControl]="myControl1"
-                     [matAutocomplete]="auto">
-              <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let option1 of options1" [value]="option1">
-                  {{option1}}
-                </mat-option>
-              </mat-autocomplete>
-            </mat-form-field>
-          </form>
-          <form class="example-form">
-            <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Années</mat-label>
-              <input type="text"
-                     placeholder="selectionner une annnée"
-                     aria-label="Années"
-                     matInput
-                     [formControl]="myControl2"
-                     [matAutocomplete]="auto">
-              <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let option2 of options2" [value]="option2">
-                  {{option2}}
-                </mat-option>
-              </mat-autocomplete>
-            </mat-form-field>
-          </form>
-  
-          <form class="example-form">
-            <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Trimestre</mat-label>
-              <input type="text"
-                     placeholder="Trimestre"
-                     aria-label="selectionner un Trimestre"
-                     matInput
-                     [formControl]="myControl3"
-                     [matAutocomplete]="auto">
-              <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let option3 of options3" [value]="option3">
-                  {{option3}}
-                </mat-option>
-              </mat-autocomplete>
-            </mat-form-field>
-          </form>
-  
-          <button mat-raised-button color="success">Générer</button>
-        </section>
-          
-<section class="section-form2">
-  <button mat-raised-button color="primary">EXCEL</button>
-          <button mat-raised-button color="primary">PDF</button>
-</section>
-        
+        <mat-tab class="tab-dasbord"  label="Rapports">
+          <h5 class="revenue-chart__header-title">   </h5>
+          <div class="formulaire-des-rapports">
+            <section class="section-form1"> 
+              <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Projets</mat-label>
+                  <input type="text"
+                      placeholder="selectionner un projet"
+                      aria-label="Number"
+                      matInput
+                      [formControl]="myControl1"
+                      [matAutocomplete]="auto">
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option1 of options1" [value]="option1">
+                      {{option1}}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+              </form>
+              <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Années</mat-label>
+                <input type="text"
+                      placeholder="selectionner une annnée"
+                      aria-label="Années"
+                      matInput
+                      [formControl]="myControl2"
+                      [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option2 of options2" [value]="option2">
+                    {{option2}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </form>
+            <form class="example-form">
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Trimestre</mat-label>
+                <input type="text"
+                      placeholder="Trimestre"
+                      aria-label="selectionner un Trimestre"
+                      matInput
+                      [formControl]="myControl3"
+                      [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option3 of options3" [value]="option3">
+                    {{option3}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </form>
+            <button mat-raised-button color="success">Générer</button>
+          </section>
+          <section class="section-form2">
+            <button mat-raised-button color="primary">EXCEL</button>
+            <button mat-raised-button color="primary">PDF</button>
+          </section>
         </div>
-        
       </mat-tab>
-      
     </mat-tab-group>
-    <div class="icons-content">
-    
-    
-     
-
-    </div>
-  </mat-tab>
-
-  <mat-tab label="Fiche de synthèse">
-    <div class="icons-content">
-      <br>
-      <br>
-      <app-support-requests [supportRequestData]="supportRequestData$ | async"></app-support-requests>
-      <br>
-      <br>
-    </div>
   </mat-tab>
 </mat-tab-group>
 </mat-card>
-
-
 </app-layout>
