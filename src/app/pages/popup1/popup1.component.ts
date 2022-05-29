@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ThemePalette} from '@angular/material/core';
-import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-popup1',
