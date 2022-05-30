@@ -375,10 +375,7 @@ div.apexcharts-xaxistooltip-bottom:after {
 
 
 .section-bleue {
-  .mat-tab-labels {
-    background: #526dfe;
-    color: white;
-}
+ 
 
 table.mdl-data-table.mdl-js-data-table.table-issulog {
   width: 100%;
@@ -482,6 +479,7 @@ display: flex;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  background:#536dfe2e;
 }
 
 
@@ -523,4 +521,71 @@ h6.text-presidence {
 .mat-tab-label:hover {
   background: #536efe;
   color: white;
+}
+
+.example-accordion-item {
+  background: #3dd4a0;
+  color: white;
+}
+
+span.example-accordion-item-description {
+  color: white !important;
+}
+
+h5.ng-star-inserted {
+  color: #3dd49f;
+  background: #3dd49f47;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+.mat-tab-label .mat-tab-label-content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+
+  font-size: 9px;
+}
+
+mat-tab-header .mat-tab-label-active {
+  background: #3dd49f;
+  color: white !important;
+}
+mat-tab-header .mat-tab-label, .mat-tab-link {
+  text-transform: uppercase;
+  color:#3dd49f;
+  font-weight: 500;
+  width: 50%;
+  min-width: 0;
+  padding: 0;
+  opacity: 1;
+  border: 1px solid #3dd49f;
+  border-radius: 5px;
+  margin: 6px;
+}
+
+thead tr th {
+  color: white !important;
+  background: #526dfe;
+}
+
+tr:hover {
+  background-color: #3dd49f82 !important;
+}
+
+
+tr:nth-child(odd) {
+  background: rgb(242, 238, 238);
+}
+
+tr:nth-child(even) {
+  background: rgb(165, 233, 255);
+}
+
+
+mat-card.mat-card.mat-focus-indicator.revenue-chart , mat-card.mat-card.mat-focus-indicator.performance-chart , mat-card.mat-card.mat-focus-indicator.server-chart {
+  background:#526dfe42;
 }

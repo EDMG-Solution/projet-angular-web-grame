@@ -3,11 +3,7 @@
     <h1>Tableau de Bord</h1>
   </mat-toolbar>
   <mat-card class="icons-wrapper">
-<<<<<<< HEAD
     
-=======
-   
->>>>>>> 9151dd7 (update pop pup)
         <mat-tab-group>
           <mat-tab class="tab-dasbord"  label="Tableau de bord">
             <div class="section-text-dash">
@@ -45,9 +41,10 @@
               <div class="chart">
                 <app-revenue-chart [revenueCharData]="revenueChartData$ | async"></app-revenue-chart>
               </div>
-            </div><br><br>
-            <h5>Etat d'avancement des projets et réformes phares au 16 mai 2022</h5><br><br>
-            <cdk-accordion class="example-accordion">
+            </div><br>
+            
+            <h5>Etat d'avancement des projets et réformes phares au 16 mai 2022</h5><br>
+            <cdk-accordion class="example-accordion ">
               <cdk-accordion-item
                 *ngFor="let item of items; let index = index;"
                 #accordionItem="cdkAccordionItem"
@@ -107,15 +104,15 @@
         </mat-tab-group>      
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Cartographie des composantes">
-        <h5 class="revenue-chart__header-title"></h5>
+       
         <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Cartographie des finances">
-        <h5 class="revenue-chart__header-title">  </h5>
+ 
         <app-daily-line-chart [dailyLineChartData]="dailyLineChartData$ | async"></app-daily-line-chart>
       </mat-tab>
       <mat-tab class="tab-dasbord"  label="Documentation ">
-        <h5 class="revenue-chart__header-title">   </h5>
+       
         <mat-tab-group>
           <mat-tab  class="tab-dasbord"  label="2022">
             2022
@@ -138,7 +135,7 @@
           </mat-tab-group>
         </mat-tab>
         <mat-tab class="tab-dasbord"  label="Rapports">
-          <h5 class="revenue-chart__header-title">   </h5>
+  
           <div class="formulaire-des-rapports">
             <section class="section-form1"> 
               <form class="example-form">
@@ -196,13 +193,7 @@
             <button mat-raised-button color="primary">PDF</button>
           </section>
         </div>
-<<<<<<< HEAD
   </mat-tab>
 </mat-tab-group>
-=======
-      </mat-tab>
-    </mat-tab-group>
- 
->>>>>>> 9151dd7 (update pop pup)
 </mat-card>
 </app-layout>
