@@ -239,7 +239,7 @@ button.mat-fab .mat-button-wrapper {
 mat-toolbar.page-header {
   display: flex;
   justify-content: space-between;
-  padding: 15px 24px 15px 24px;
+  padding: 15px 24px 0px 24px;
   background: none;
   height: auto;
 
@@ -474,12 +474,19 @@ display: flex;
 .section-text-dash {
   display: flex;
   justify-content: space-around;
-  border: 2px solid #526dfe;
-  margin: 10px 20px;
+  
+  margin: 10px 0px;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
   background:#536dfe2e;
+
+
+  &:hover{
+    background: #3dd4a066;
+  }
+
+
 }
 
 
@@ -567,7 +574,7 @@ mat-tab-header .mat-tab-label, .mat-tab-link {
   margin: 6px;
 }
 
-thead tr th {
+thead tr th , mat-header-cell {
   color: white !important;
   background: #526dfe;
 }
@@ -582,10 +589,50 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-  background: rgb(165, 233, 255);
+  background: #3dd49fd4;
 }
 
 
 mat-card.mat-card.mat-focus-indicator.revenue-chart , mat-card.mat-card.mat-focus-indicator.performance-chart , mat-card.mat-card.mat-focus-indicator.server-chart {
   background:#526dfe42;
+  &:hover{
+    background: #3dd4a066;
+  }
+}
+
+
+.example-accordion-item {
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+
+mat-tree.mat-tree.cdk-tree , .taptoshow {
+  background: #3dd49f;
+  margin: 15px 0px;
+  border-radius: 5px;
+  padding: 10px;
+  color: white !important;
+  box-shadow: -1px -1px 5px 0px #3dd49f;
+}
+
+
+mat-tree-node {
+  color: white !important;
+  cursor: pointer;
+}
+
+
+.sectionA.taptoshow {
+  width: 20%;
+}
+
+cdk-accordion-item#accordion-header-0 {
+  background: orangered;
+}
+
+
+mat-expansion-panel:hover {
+  background:#F3F5FF;
+ 
 }
