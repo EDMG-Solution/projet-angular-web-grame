@@ -636,3 +636,32 @@ mat-expansion-panel:hover {
   background:#F3F5FF;
  
 }
+
+
+select#cars {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #f0f0f0;
+  padding: 5px 0px;
+}
+
+.deux-formulaire{
+  display: flex;
+ width: 100%;
+}
+
+.formulaire-1 {
+  width: 50%;
+}
+
+.formulaire-2 {
+  width: 50%;
+}
+
+h6.titre-parametrage {
+  background: #526dfe;
+  padding: 10px;
+  width: 87%;
+  color: white;
+  border-radius: 5px;
+}

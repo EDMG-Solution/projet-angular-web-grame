@@ -6,59 +6,47 @@
   <mat-card class="icons-wrapper">
     <div class="icons-content">
       <div class="page-content__items-wrapper">
-        <!-- Card 2 -->
-        <mat-card class="page-content__item">
-          <mat-card-title> </mat-card-title>
 
-          <mat-card-title> </mat-card-title>
+       
+       <section class="deux-formulaire">
+         <div class="formulaire-1">
+          <mat-checkbox class="example-margin" [(ngModel)]="checked">Appliquer le verrou CDD</mat-checkbox>
+          <br>
+          <br>
+          <h6 class="titre-parametrage"> Configuration CDD</h6>
+          <hr>
+          
+          <label for="">Jour et heure</label>
+          <select name="cars" id="cars">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+         </div>
+         <div class="formulaire-2">
+          <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Appliquer le verrou CDP / PF</mat-checkbox>
+          <br>
+          <br>
+          <h6 class="titre-parametrage">  Configuration CDP/PF</h6>
+          <hr>
+          <label for="">Jour et heure</label>
+          <select name="cars" id="cars">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br><br>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Valider
+          </button>
+        </div>
 
-          <mat-card-content>
-            <section class="">
-              <mat-checkbox>Appliquer le verrou CDD</mat-checkbox>
-            </section>
-
-            <section class="">
-              <h6>Configuration CDD</h6>
-            </section>
-
-            <section class="example-section">
-              <div class="example-container">
-                <mat-form-field appearance="fill">
-                  <mat-label>Select me</mat-label>
-                  <mat-select>
-                    <mat-option aria-selected="true" value="option"
-                      >1</mat-option
-                    >
-                    <mat-option value="option">2</mat-option>
-                    <mat-option value="option">3</mat-option>
-                    <mat-option value="option">4</mat-option>
-                    <mat-option value="option">5</mat-option>
-                    <mat-option value="option">6</mat-option>
-                    <mat-option value="option">7</mat-option>
-                    <mat-option value="option">8</mat-option>
-                    <mat-option value="option">9</mat-option>
-                    <mat-option value="option">10</mat-option>
-                    <mat-option value="option">11</mat-option>
-                  </mat-select>
-                  <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
-                </mat-form-field>
-
-                <mat-form-field hintLabel="Max 10 characters" appearance="fill">
-                  <mat-label>Enter some input</mat-label>
-                  <input
-                    matInput
-                    #input
-                    maxlength="10"
-                    placeholder="Ex. Nougat"
-                  />
-                  <mat-hint align="end"
-                    >{{ input.value?.length || 0 }}/10</mat-hint
-                  >
-                </mat-form-field>
-              </div>
-            </section>
-          </mat-card-content>
-        </mat-card>
+       </section>
+       
       </div>
     </div>
   </mat-card>

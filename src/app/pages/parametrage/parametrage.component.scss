@@ -322,27 +322,24 @@
   }
 }
 
-.icon-rotate {
-  transform: rotate(180deg);
+select#cars {
+  width: 90%;
+  border: none;
+  border-bottom: 1.5px solid #f0f0f0;
+  padding: 5px 0px;
 }
 
-
-.example-section {
-  margin: 12px 0;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+  width: 90%;
 }
 
-.example-margin {
-  margin: 0 12px;
+.mdl-button--raised.mdl-button--colored {
+  background: rgb(82 109 254);
+  color: rgb(255,255,255);
 }
-
-ul {
-  list-style-type: none;
-  margin-top: 4px;
-}
-
-.example-container .mat-form-field + .mat-form-field {
-  margin-left: 8px;
-}
-
-
-

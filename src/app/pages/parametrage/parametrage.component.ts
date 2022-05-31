@@ -15,6 +15,11 @@ export interface Task {
 })
 export class ParametrageComponent implements OnInit {
 
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
+
   task: Task = {
     name: 'Indeterminate',
     completed: false,
